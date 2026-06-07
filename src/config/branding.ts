@@ -6,8 +6,8 @@ export const brandConfig = {
   name: 'EPC Booking UK',
 
   logo: {
-    primary: '/National Removal header.png',
-    footer: '/National removal footer.png',
+    primary: '/epc-booking-logo.png',
+    footer: '/epc-booking-logo.png',
     alt: 'EPC Booking UK',
   },
 

@@ -17,7 +17,7 @@
     "postbuild": "bash scripts/postbuild.sh"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.103.0",
+    "@supabase/supabase-js": "^2.107.0",
     "csv-parse": "6.1.0",
     "jspdf": "^4.1.0",
     "lucide-react": "0.344.0",

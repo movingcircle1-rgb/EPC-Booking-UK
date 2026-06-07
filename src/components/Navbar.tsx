@@ -297,7 +297,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-24 sm:h-28 md:h-32">
             <a href="/" className="flex items-center hover:opacity-90 transition-opacity" aria-label="Go to homepage">
-              <img src={brandConfig.logo.primary} alt={brandConfig.logo.alt} className="h-14 sm:h-16 md:h-20 w-auto" />
+              <img src={brandConfig.logo.primary} alt={brandConfig.logo.alt} className="h-24 sm:h-28 md:h-32 w-auto" />
             </a>
 
             <div className="hidden lg:flex items-center space-x-1">

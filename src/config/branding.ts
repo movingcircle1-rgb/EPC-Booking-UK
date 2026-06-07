@@ -1,14 +1,14 @@
 export const brandConfig = {
-  companyName: 'National',
-  tagline: 'Professional Services Across the UK',
+  companyName: 'EPC Booking UK',
+  tagline: 'Book Your EPC Certificate Online',
   description:
-    'Flexible service platform for multiple business types, locations and future expansion.',
-  name: 'National',
+    'Fast local EPC appointments with qualified energy assessors, clear pricing and digital certificate delivery.',
+  name: 'EPC Booking UK',
 
   logo: {
     primary: '/National Removal header.png',
     footer: '/National removal footer.png',
-    alt: 'National',
+    alt: 'EPC Booking UK',
   },
 
   contact: {
@@ -37,20 +37,22 @@ export const brandConfig = {
   },
 
   theme: {
-    primary: '#e71c5e',
-    primaryHover: '#c91852',
-    primaryDark: '#a01545',
-    secondary: '#949494',
-    bg1: '#949494',
-    bg2: '#e1e1e1',
-    text: '#293132',
-    accent: '#e71c5e',
+    primary: '#1F3447',
+    primaryHover: '#172838',
+    primaryDark: '#122130',
+    secondary: '#2F4E63',
+    bg1: '#F4F6F7',
+    bg2: '#E8EEF1',
+    text: '#17212B',
+    accent: '#C73532',
   },
 
   seo: {
-    title: 'National | Professional Services',
-    description: 'Flexible service platform for multiple business types across the UK.',
-    keywords: 'national, services, uk business, locations',
+    title: 'EPC Booking UK | Book EPC Certificates Online',
+    description:
+      'Book your EPC certificate online. Fast local appointments, clear pricing and digital certificate delivery.',
+    keywords:
+      'EPC certificate, book EPC online, domestic EPC, landlord EPC, energy performance certificate',
     siteUrl: '',
   },
 
@@ -58,7 +60,7 @@ export const brandConfig = {
     copyrightText:
       '© ' +
       new Date().getFullYear() +
-      ' National. All Rights Reserved.',
+      ' EPC Booking UK. All Rights Reserved.',
   },
 };
 

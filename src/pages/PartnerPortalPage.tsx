@@ -132,7 +132,7 @@ export default function PartnerPortalPage() {
           </p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-[#e71c5e] hover:bg-[#c91852] text-white px-6 py-3 rounded-lg font-semibold transition-all"
+            className="bg-[#C73532] hover:bg-[#A92C2A] text-white px-6 py-3 rounded-lg font-semibold transition-all"
           >
             Refresh Page
           </button>
@@ -169,7 +169,7 @@ export default function PartnerPortalPage() {
               <button className="relative p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
                 <Bell size={24} />
                 {unreadNotifications > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-[#e71c5e] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-[#C73532] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                     {unreadNotifications}
                   </span>
                 )}
@@ -192,7 +192,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('dashboard')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'dashboard'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -203,7 +203,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('profile')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'profile'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -214,7 +214,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('referrals')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'referrals'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -225,7 +225,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('statements')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'statements'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -236,7 +236,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('materials')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'materials'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -247,7 +247,7 @@ export default function PartnerPortalPage() {
               onClick={() => setActiveTab('manager')}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                 activeTab === 'manager'
-                  ? 'border-[#e71c5e] text-[#e71c5e]'
+                  ? 'border-[#C73532] text-[#C73532]'
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -266,14 +266,14 @@ export default function PartnerPortalPage() {
         {activeTab === 'dashboard' && (
           <>
             <div className="grid md:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#e71c5e]">
+          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#C73532]">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-gray-600 text-sm font-semibold">Total Referrals</p>
                 <p className="text-3xl font-bold text-gray-900 mt-1">{referrals.length}</p>
               </div>
-              <div className="w-12 h-12 bg-[#e71c5e] bg-opacity-10 rounded-full flex items-center justify-center">
-                <Users size={24} className="text-[#e71c5e]" />
+              <div className="w-12 h-12 bg-[#C73532] bg-opacity-10 rounded-full flex items-center justify-center">
+                <Users size={24} className="text-[#C73532]" />
               </div>
             </div>
           </div>
@@ -318,7 +318,7 @@ export default function PartnerPortalPage() {
         <div className="mb-8">
           <button
             onClick={() => setShowReferralForm(!showReferralForm)}
-            className="bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors flex items-center gap-2"
+            className="bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors flex items-center gap-2"
           >
             <PlusCircle size={20} />
             Submit New Referral
@@ -338,7 +338,7 @@ export default function PartnerPortalPage() {
                   required
                   value={formData.customerName}
                   onChange={(e) => setFormData({...formData, customerName: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="John Smith"
                 />
               </div>
@@ -351,7 +351,7 @@ export default function PartnerPortalPage() {
                   required
                   value={formData.customerEmail}
                   onChange={(e) => setFormData({...formData, customerEmail: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="john@example.com"
                 />
               </div>
@@ -364,7 +364,7 @@ export default function PartnerPortalPage() {
                   required
                   value={formData.customerPhone}
                   onChange={(e) => setFormData({...formData, customerPhone: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="07xxx xxxxxx"
                 />
               </div>
@@ -375,7 +375,7 @@ export default function PartnerPortalPage() {
                 <select
                   value={formData.serviceType}
                   onChange={(e) => setFormData({...formData, serviceType: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent">
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent">
                   <option>House Removal</option>
                   <option>Office Removal</option>
                   <option>International Move</option>
@@ -391,7 +391,7 @@ export default function PartnerPortalPage() {
                   required
                   value={formData.moveFrom}
                   onChange={(e) => setFormData({...formData, moveFrom: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="City or Postcode"
                 />
               </div>
@@ -404,7 +404,7 @@ export default function PartnerPortalPage() {
                   required
                   value={formData.moveTo}
                   onChange={(e) => setFormData({...formData, moveTo: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="City or Postcode"
                 />
               </div>
@@ -416,7 +416,7 @@ export default function PartnerPortalPage() {
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({...formData, notes: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="Any specific requirements or information about this referral..."
                 />
               </div>
@@ -424,7 +424,7 @@ export default function PartnerPortalPage() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {submitting ? 'Submitting...' : 'Submit Referral'}
                 </button>
@@ -474,7 +474,7 @@ export default function PartnerPortalPage() {
                       </div>
                       <div>
                         <p className="text-gray-600">Potential Earnings</p>
-                        <p className="font-semibold text-[#e71c5e]">
+                        <p className="font-semibold text-[#C73532]">
                           £{referral.commission_amount || '0.00'}
                         </p>
                       </div>
@@ -493,7 +493,7 @@ export default function PartnerPortalPage() {
 
           <DashboardCard title="Commission Summary" icon={DollarSign}>
             <div className="space-y-4">
-              <div className="bg-gradient-to-r from-[#e71c5e] to-[#c91852] rounded-lg p-6 text-white">
+              <div className="bg-gradient-to-r from-[#C73532] to-[#A92C2A] rounded-lg p-6 text-white">
                 <p className="text-sm font-semibold mb-2">Total Earnings This Month</p>
                 <p className="text-4xl font-bold mb-4">£0.00</p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
@@ -559,7 +559,7 @@ export default function PartnerPortalPage() {
 
           <DashboardCard title="Partner Resources" icon={FileText}>
             <div className="space-y-3">
-              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all text-left flex items-center justify-between">
+              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left flex items-center justify-between">
                 <div>
                   <h4 className="font-bold text-gray-900 text-sm">Marketing Materials</h4>
                   <p className="text-xs text-gray-600 mt-1">Download brochures and flyers</p>
@@ -567,7 +567,7 @@ export default function PartnerPortalPage() {
                 <FileText size={20} className="text-gray-400" />
               </button>
 
-              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all text-left flex items-center justify-between">
+              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left flex items-center justify-between">
                 <div>
                   <h4 className="font-bold text-gray-900 text-sm">Partner Agreement</h4>
                   <p className="text-xs text-gray-600 mt-1">View your partnership terms</p>
@@ -575,7 +575,7 @@ export default function PartnerPortalPage() {
                 <FileText size={20} className="text-gray-400" />
               </button>
 
-              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all text-left flex items-center justify-between">
+              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left flex items-center justify-between">
                 <div>
                   <h4 className="font-bold text-gray-900 text-sm">Commission Structure</h4>
                   <p className="text-xs text-gray-600 mt-1">View earning potential</p>
@@ -583,7 +583,7 @@ export default function PartnerPortalPage() {
                 <DollarSign size={20} className="text-gray-400" />
               </button>
 
-              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all text-left flex items-center justify-between">
+              <button className="w-full p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left flex items-center justify-between">
                 <div>
                   <h4 className="font-bold text-gray-900 text-sm">Partner Support</h4>
                   <p className="text-xs text-gray-600 mt-1">Contact your account manager</p>

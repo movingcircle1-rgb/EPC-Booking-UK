@@ -17,8 +17,8 @@ export default function DashboardCard({ title, icon: Icon, children, action }: D
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
           {Icon && (
-            <div className="w-10 h-10 bg-[#e71c5e] bg-opacity-10 rounded-full flex items-center justify-center">
-              <Icon size={20} className="text-[#e71c5e]" />
+            <div className="w-10 h-10 bg-[#C73532] bg-opacity-10 rounded-full flex items-center justify-center">
+              <Icon size={20} className="text-[#C73532]" />
             </div>
           )}
           <h2 className="text-xl font-bold text-gray-900">{title}</h2>
@@ -26,7 +26,7 @@ export default function DashboardCard({ title, icon: Icon, children, action }: D
         {action && (
           <button
             onClick={action.onClick}
-            className="text-[#e71c5e] hover:text-[#c91852] text-sm font-semibold transition-colors"
+            className="text-[#C73532] hover:text-[#A92C2A] text-sm font-semibold transition-colors"
           >
             {action.label}
           </button>

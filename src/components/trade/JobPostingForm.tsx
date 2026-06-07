@@ -141,7 +141,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           value={formData.title}
           onChange={(e) => setFormData({ ...formData, title: e.target.value })}
           placeholder="e.g., 3-Bed House Removal - Birmingham to London"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         />
       </div>
 
@@ -156,7 +156,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           onChange={(e) => setFormData({ ...formData, description: e.target.value })}
           rows={4}
           placeholder="Provide detailed information about the job..."
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         />
       </div>
 
@@ -169,7 +169,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           required
           value={formData.serviceType}
           onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         >
           <option value="">Select service type</option>
           {serviceTypes.map((type, index) => (
@@ -190,7 +190,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.pickupPostcode}
             onChange={(e) => setFormData({ ...formData, pickupPostcode: e.target.value.toUpperCase() })}
             placeholder="e.g., WV13 3YA"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
 
@@ -205,7 +205,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.deliveryPostcode}
             onChange={(e) => setFormData({ ...formData, deliveryPostcode: e.target.value.toUpperCase() })}
             placeholder="e.g., SW1A 1AA"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
       </div>
@@ -221,7 +221,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.volumeCubicFeet}
             onChange={(e) => setFormData({ ...formData, volumeCubicFeet: e.target.value })}
             placeholder="e.g., 500"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
 
@@ -237,7 +237,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.volumeCubicMetres}
             onChange={(e) => setFormData({ ...formData, volumeCubicMetres: e.target.value })}
             placeholder="e.g., 14.16"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
           <p className="mt-1 text-xs text-gray-500">1 cubic metre = 35.31 cubic feet</p>
         </div>
@@ -253,7 +253,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.preferredDate}
             onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
             min={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
       </div>
@@ -269,7 +269,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.jobDate}
             onChange={(e) => setFormData({ ...formData, jobDate: e.target.value })}
             min={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
           <p className="mt-1 text-xs text-gray-500">Only fill if job date is confirmed</p>
         </div>
@@ -284,7 +284,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
             value={formData.estimatedJobDate}
             onChange={(e) => setFormData({ ...formData, estimatedJobDate: e.target.value })}
             min={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
           <p className="mt-1 text-xs text-gray-500">Fill if job date is estimated/flexible</p>
         </div>
@@ -296,7 +296,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           id="flexibleDates"
           checked={formData.flexibleDates}
           onChange={(e) => setFormData({ ...formData, flexibleDates: e.target.checked })}
-          className="w-5 h-5 text-[#e71c5e] border-gray-300 rounded focus:ring-[#e71c5e]"
+          className="w-5 h-5 text-[#C73532] border-gray-300 rounded focus:ring-[#C73532]"
         />
         <label htmlFor="flexibleDates" className="text-sm font-medium text-gray-700">
           Dates are flexible
@@ -313,7 +313,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           value={formData.budgetAmount}
           onChange={(e) => setFormData({ ...formData, budgetAmount: e.target.value })}
           placeholder="e.g., 350.00"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         />
         <p className="mt-1 text-sm text-gray-500">Optional: Set a fixed price for direct purchase</p>
       </div>
@@ -327,7 +327,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
           onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
           rows={3}
           placeholder="Special requirements, equipment needed, access restrictions, etc."
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         />
       </div>
 
@@ -335,7 +335,7 @@ export default function JobPostingForm({ onSuccess, onCancel }: JobPostingFormPr
         <button
           type="submit"
           disabled={loading}
-          className="flex-1 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? 'Posting...' : 'Post Job'}
         </button>

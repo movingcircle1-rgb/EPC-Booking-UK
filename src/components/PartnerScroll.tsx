@@ -61,7 +61,7 @@ export default function PartnerScroll() {
             {[...partners, ...partners].map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex items-center justify-center h-24 w-48 bg-gray-50 rounded-lg border-2 border-gray-200 hover:border-[#e71c5e] hover:shadow-lg transition-all"
+                className="flex-shrink-0 flex items-center justify-center h-24 w-48 bg-gray-50 rounded-lg border-2 border-gray-200 hover:border-[#C73532] hover:shadow-lg transition-all"
               >
                 <div className="text-center px-4">
                   <p className="font-semibold text-gray-700 text-sm">{partner.name}</p>

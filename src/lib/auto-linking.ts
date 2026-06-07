@@ -68,7 +68,7 @@ function escapeRegExp(string: string): string {
 
 function createLinkElement(keyword: Keyword, matchedText: string): string {
   const anchorText = keyword.link_text || matchedText;
-  return `<a href="${keyword.target_url}" class="text-[#e71c5e] hover:text-[#c91852] underline transition-colors">${anchorText}</a>`;
+  return `<a href="${keyword.target_url}" class="text-[#C73532] hover:text-[#A92C2A] underline transition-colors">${anchorText}</a>`;
 }
 
 export function processContentWithLinks(

@@ -114,7 +114,7 @@ export default function AvailabilityManagement() {
     <div className="bg-white rounded-xl shadow-lg">
       <div className="border-b border-gray-200 px-6 py-4">
         <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <Calendar size={24} className="text-[#e71c5e]" />
+          <Calendar size={24} className="text-[#C73532]" />
           My Availability
         </h2>
         <p className="text-sm text-gray-600 mt-1">Set your weekly work availability</p>
@@ -141,7 +141,7 @@ export default function AvailabilityManagement() {
                       type="checkbox"
                       checked={dayAvail.is_available}
                       onChange={(e) => handleAvailabilityChange(index, 'is_available', e.target.checked)}
-                      className="w-5 h-5 text-[#e71c5e] border-gray-300 rounded focus:ring-[#e71c5e]"
+                      className="w-5 h-5 text-[#C73532] border-gray-300 rounded focus:ring-[#C73532]"
                     />
                     <label className="font-semibold text-gray-900">{day.label}</label>
                   </div>
@@ -154,14 +154,14 @@ export default function AvailabilityManagement() {
                           type="time"
                           value={dayAvail.start_time}
                           onChange={(e) => handleAvailabilityChange(index, 'start_time', e.target.value)}
-                          className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                          className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                         />
                         <span className="text-gray-500">to</span>
                         <input
                           type="time"
                           value={dayAvail.end_time}
                           onChange={(e) => handleAvailabilityChange(index, 'end_time', e.target.value)}
-                          className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                          className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                         />
                       </div>
 
@@ -170,7 +170,7 @@ export default function AvailabilityManagement() {
                         placeholder="Notes (optional)"
                         value={dayAvail.notes}
                         onChange={(e) => handleAvailabilityChange(index, 'notes', e.target.value)}
-                        className="flex-1 min-w-[200px] px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                        className="flex-1 min-w-[200px] px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                       />
                     </>
                   )}
@@ -188,7 +188,7 @@ export default function AvailabilityManagement() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full flex items-center justify-center gap-2 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <Save size={20} />
             {loading ? 'Saving...' : 'Save Availability'}

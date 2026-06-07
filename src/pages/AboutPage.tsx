@@ -69,7 +69,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-[#e71c5e] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#C73532] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Award Winning</h3>
@@ -79,7 +79,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-[#e71c5e] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#C73532] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Expert Team</h3>
@@ -89,7 +89,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-[#e71c5e] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#C73532] rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Best Value</h3>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-[#e71c5e] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#C73532] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Fully Insured</h3>
@@ -117,28 +117,28 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our Values</h2>
 
             <div className="space-y-8">
-              <div className="border-l-4 border-[#e71c5e] pl-6">
+              <div className="border-l-4 border-[#C73532] pl-6">
                 <h3 className="text-2xl font-bold mb-3">Customer First</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every decision we make is guided by what's best for our customers. Your satisfaction is our success.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[#e71c5e] pl-6">
+              <div className="border-l-4 border-[#C73532] pl-6">
                 <h3 className="text-2xl font-bold mb-3">Integrity</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We believe in honest, transparent communication. No hidden fees, no surprises, just straightforward service.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[#e71c5e] pl-6">
+              <div className="border-l-4 border-[#C73532] pl-6">
                 <h3 className="text-2xl font-bold mb-3">Excellence</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We strive for perfection in everything we do, from the first phone call to the final box delivered.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[#e71c5e] pl-6">
+              <div className="border-l-4 border-[#C73532] pl-6">
                 <h3 className="text-2xl font-bold mb-3">Innovation</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We continuously invest in the latest technology and training to provide you with the best possible service.
@@ -157,22 +157,22 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="text-5xl font-bold text-[#e71c5e] mb-2">25+</div>
+                <div className="text-5xl font-bold text-[#C73532] mb-2">25+</div>
                 <div className="text-gray-600">Years of Experience</div>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="text-5xl font-bold text-[#e71c5e] mb-2">50K+</div>
+                <div className="text-5xl font-bold text-[#C73532] mb-2">50K+</div>
                 <div className="text-gray-600">Successful Moves</div>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="text-5xl font-bold text-[#e71c5e] mb-2">100+</div>
+                <div className="text-5xl font-bold text-[#C73532] mb-2">100+</div>
                 <div className="text-gray-600">Professional Staff</div>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="text-5xl font-bold text-[#e71c5e] mb-2">98%</div>
+                <div className="text-5xl font-bold text-[#C73532] mb-2">98%</div>
                 <div className="text-gray-600">Customer Satisfaction</div>
               </div>
             </div>

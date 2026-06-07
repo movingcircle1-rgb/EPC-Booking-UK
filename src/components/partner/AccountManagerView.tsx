@@ -51,7 +51,7 @@ export default function AccountManagerView() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#e71c5e]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
       </div>
     );
   }
@@ -78,7 +78,7 @@ export default function AccountManagerView() {
       <div className="p-6">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-shrink-0">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#e71c5e] to-[#c91852] flex items-center justify-center">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#C73532] to-[#A92C2A] flex items-center justify-center">
               {accountManager.avatar_url ? (
                 <img
                   src={accountManager.avatar_url}
@@ -93,7 +93,7 @@ export default function AccountManagerView() {
 
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">{accountManager.full_name}</h3>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#e71c5e] bg-opacity-10 rounded-full text-[#e71c5e] font-semibold text-sm mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C73532] bg-opacity-10 rounded-full text-[#C73532] font-semibold text-sm mb-4">
               <Building2 size={16} />
               {accountManager.department}
             </div>
@@ -107,8 +107,8 @@ export default function AccountManagerView() {
                 href={`mailto:${accountManager.email}`}
                 className="flex items-center gap-3 p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors border border-gray-200"
               >
-                <div className="w-10 h-10 bg-[#e71c5e] bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail size={20} className="text-[#e71c5e]" />
+                <div className="w-10 h-10 bg-[#C73532] bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail size={20} className="text-[#C73532]" />
                 </div>
                 <div>
                   <p className="text-xs text-gray-600 font-semibold">Email</p>

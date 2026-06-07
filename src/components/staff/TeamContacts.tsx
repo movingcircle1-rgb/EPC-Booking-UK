@@ -58,7 +58,7 @@ export default function TeamContacts() {
       isManager ? 'border-yellow-300 bg-yellow-50' : 'border-gray-200 bg-white'
     }`}>
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-gradient-to-br from-[#e71c5e] to-[#c91852] rounded-full flex items-center justify-center text-white text-xl font-bold">
+        <div className="w-16 h-16 bg-gradient-to-br from-[#C73532] to-[#A92C2A] rounded-full flex items-center justify-center text-white text-xl font-bold">
           {person.full_name?.charAt(0) || <User size={24} />}
         </div>
 
@@ -78,7 +78,7 @@ export default function TeamContacts() {
             {person.email && (
               <div className="flex items-center gap-2 text-sm text-gray-700">
                 <Mail size={14} className="text-gray-400" />
-                <a href={`mailto:${person.email}`} className="hover:text-[#e71c5e] transition-colors">
+                <a href={`mailto:${person.email}`} className="hover:text-[#C73532] transition-colors">
                   {person.email}
                 </a>
               </div>
@@ -86,7 +86,7 @@ export default function TeamContacts() {
             {person.phone && (
               <div className="flex items-center gap-2 text-sm text-gray-700">
                 <Phone size={14} className="text-gray-400" />
-                <a href={`tel:${person.phone}`} className="hover:text-[#e71c5e] transition-colors">
+                <a href={`tel:${person.phone}`} className="hover:text-[#C73532] transition-colors">
                   {person.phone}
                 </a>
               </div>
@@ -109,7 +109,7 @@ export default function TeamContacts() {
     <div className="bg-white rounded-xl shadow-lg">
       <div className="border-b border-gray-200 px-6 py-4">
         <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <Users size={24} className="text-[#e71c5e]" />
+          <Users size={24} className="text-[#C73532]" />
           Team Contacts
         </h2>
         <p className="text-sm text-gray-600 mt-1">Contact your manager and colleagues</p>

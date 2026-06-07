@@ -34,7 +34,7 @@ function autoLinkHtml(html: string): string {
 
       for (const item of linkMap) {
         updated = updated.replace(item.pattern, (match) => {
-          return `<a href="${item.href}" class="text-[#e71c5e] hover:text-[#c91852] underline underline-offset-2">${match}</a>`
+          return `<a href="${item.href}" class="text-[#C73532] hover:text-[#A92C2A] underline underline-offset-2">${match}</a>`
         })
       }
 

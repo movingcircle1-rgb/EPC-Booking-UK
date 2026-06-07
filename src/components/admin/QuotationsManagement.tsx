@@ -183,7 +183,7 @@ export default function QuotationsManagement() {
             onClick={() => setStatusFilter(stat.status)}
             className={`p-4 rounded-lg border-2 transition-all ${
               statusFilter === stat.status
-                ? 'border-[#e71c5e] bg-[#e71c5e]/5'
+                ? 'border-[#C73532] bg-[#C73532]/5'
                 : 'border-gray-200 hover:border-gray-300'
             }`}
           >
@@ -203,7 +203,7 @@ export default function QuotationsManagement() {
                 placeholder="Search by email or quotation number..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e71c5e]/20 focus:border-[#e71c5e]"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C73532]/20 focus:border-[#C73532]"
               />
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function QuotationsManagement() {
                             setSelectedQuotation(quotation);
                             setShowDetailModal(true);
                           }}
-                          className="p-2 text-gray-600 hover:text-[#e71c5e] hover:bg-gray-100 rounded-lg transition-colors"
+                          className="p-2 text-gray-600 hover:text-[#C73532] hover:bg-gray-100 rounded-lg transition-colors"
                           title="View Details"
                         >
                           <Eye size={18} />

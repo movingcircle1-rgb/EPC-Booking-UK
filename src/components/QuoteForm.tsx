@@ -265,7 +265,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-        <div className="bg-gradient-to-r from-[#e71c5e] to-[#c91852] p-6 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-[#C73532] to-[#A92C2A] p-6 flex items-center justify-between">
           <h2 className="text-2xl font-bold text-white">Get Your Free Quote</h2>
           <button
             onClick={onClose}
@@ -289,7 +289,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
                 placeholder="John Smith"
               />
             </div>
@@ -304,7 +304,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
                 placeholder="john@example.com"
               />
             </div>
@@ -321,7 +321,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
                 placeholder="07123 456789"
               />
             </div>
@@ -335,7 +335,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.service_type}
                 onChange={(e) => setFormData({ ...formData, service_type: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
               >
                 <option value="removals">House Removals</option>
                 <option value="office">Office Removals</option>
@@ -358,7 +358,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.from_postcode}
                 onChange={(e) => setFormData({ ...formData, from_postcode: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
                 placeholder="SW1A 1AA"
               />
             </div>
@@ -373,7 +373,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 required
                 value={formData.to_postcode}
                 onChange={(e) => setFormData({ ...formData, to_postcode: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
                 placeholder="M1 1AA"
               />
             </div>
@@ -388,7 +388,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 id="property_size"
                 value={formData.property_size}
                 onChange={(e) => setFormData({ ...formData, property_size: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
               >
                 <option value="">Select property size</option>
                 <option value="studio">Studio</option>
@@ -411,7 +411,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
                 value={formData.preferred_date}
                 onChange={(e) => setFormData({ ...formData, preferred_date: e.target.value })}
                 min={todayIso || undefined}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
               />
             </div>
           </div>
@@ -422,7 +422,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
               type="checkbox"
               checked={formData.flexible_dates}
               onChange={(e) => setFormData({ ...formData, flexible_dates: e.target.checked })}
-              className="w-5 h-5 rounded border-gray-300 text-[#e71c5e] focus:ring-[#e71c5e] focus:ring-2"
+              className="w-5 h-5 rounded border-gray-300 text-[#C73532] focus:ring-[#C73532] focus:ring-2"
             />
             <label htmlFor="flexible_dates" className="text-sm font-semibold text-gray-700">
               I'm flexible with dates
@@ -438,7 +438,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
               type="text"
               value={formData.location}
               onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all"
               placeholder="e.g., London Bridge area to Manchester city centre"
             />
           </div>
@@ -452,7 +452,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               rows={3}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all resize-none"
               placeholder="Tell us about your moving requirements..."
             />
           </div>
@@ -466,7 +466,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
               value={formData.additional_requirements}
               onChange={(e) => setFormData({ ...formData, additional_requirements: e.target.value })}
               rows={2}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#e71c5e] focus:ring-2 focus:ring-[#e71c5e]/20 outline-none transition-all resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#C73532] focus:ring-2 focus:ring-[#C73532]/20 outline-none transition-all resize-none"
               placeholder="e.g., fragile items, parking restrictions, storage needs..."
             />
           </div>
@@ -502,7 +502,7 @@ export default function QuoteForm({ onClose }: QuoteFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#e71c5e] hover:bg-[#c91852] text-white px-6 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#C73532] hover:bg-[#A92C2A] text-white px-6 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Submit quote request"
           >
             {isSubmitting ? 'Submitting...' : 'Submit Request'}

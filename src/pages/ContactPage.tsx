@@ -49,7 +49,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#e71c5e] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#C73532] rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone size={24} className="text-white" />
                   </div>
                   <div>
@@ -58,7 +58,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                       Main:{' '}
                       <a
                         href={brandConfig.contact.phoneHref}
-                        className="text-[#e71c5e] hover:underline"
+                        className="text-[#C73532] hover:underline"
                       >
                         {brandConfig.contact.phone}
                       </a>
@@ -67,7 +67,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                       Mobile:{' '}
                       <a
                         href={brandConfig.contact.phoneSecondaryHref}
-                        className="text-[#e71c5e] hover:underline"
+                        className="text-[#C73532] hover:underline"
                       >
                         {brandConfig.contact.phoneSecondary}
                       </a>
@@ -76,7 +76,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#e71c5e] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#C73532] rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail size={24} className="text-white" />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                       Sales:{' '}
                       <a
                         href="mailto:sales@nationalremovalsandstorage.co.uk"
-                        className="text-[#e71c5e] hover:underline"
+                        className="text-[#C73532] hover:underline"
                       >
                         sales@nationalremovalsandstorage.co.uk
                       </a>
@@ -94,7 +94,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                       Support:{' '}
                       <a
                         href="mailto:support@nationalremovalsandstorage.co.uk"
-                        className="text-[#e71c5e] hover:underline"
+                        className="text-[#C73532] hover:underline"
                       >
                         support@nationalremovalsandstorage.co.uk
                       </a>
@@ -103,7 +103,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#e71c5e] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#C73532] rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin size={24} className="text-white" />
                   </div>
                   <div>
@@ -121,7 +121,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#e71c5e] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#C73532] rounded-full flex items-center justify-center flex-shrink-0">
                     <Clock size={24} className="text-white" />
                   </div>
                   <div>
@@ -137,8 +137,8 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                 </div>
               </div>
 
-              <div className="mt-8 bg-[#e71c5e]/10 rounded-xl p-6 border border-[#e71c5e]/20">
-                <h3 className="font-bold text-lg mb-3 text-[#e71c5e]">
+              <div className="mt-8 bg-[#C73532]/10 rounded-xl p-6 border border-[#C73532]/20">
+                <h3 className="font-bold text-lg mb-3 text-[#C73532]">
                   24/7 Emergency Support
                 </h3>
                 <p className="text-gray-700 mb-2">
@@ -147,7 +147,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                 </p>
                 <a
                   href={brandConfig.contact.phoneSecondaryHref}
-                  className="text-[#e71c5e] font-semibold hover:underline"
+                  className="text-[#C73532] font-semibold hover:underline"
                 >
                   {brandConfig.contact.phoneSecondary}
                 </a>
@@ -166,7 +166,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
 
                 <button
                   onClick={onGetQuote}
-                  className="w-full bg-[#e71c5e] hover:bg-[#c91852] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg mb-6"
+                  className="w-full bg-[#C73532] hover:bg-[#A92C2A] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg mb-6"
                 >
                   Open Full Quote Form
                 </button>
@@ -175,7 +175,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                   <h3 className="font-bold text-lg mb-4">Or Call Us Directly</h3>
                   <a
                     href={brandConfig.contact.phoneHref}
-                    className="block w-full bg-white hover:bg-gray-100 text-[#e71c5e] border-2 border-[#e71c5e] px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center"
+                    className="block w-full bg-white hover:bg-gray-100 text-[#C73532] border-2 border-[#C73532] px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center"
                   >
                     {brandConfig.contact.phone}
                   </a>
@@ -258,7 +258,7 @@ export default function ContactPage({ onGetQuote }: ContactPageProps) {
                   href="https://www.google.com/maps/dir//Unit+J,+Fernside+Road,+Willenhall+WV13+3YA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 text-[#e71c5e] hover:text-[#c91852] font-semibold"
+                  className="inline-flex items-center gap-2 mt-4 text-[#C73532] hover:text-[#A92C2A] font-semibold"
                 >
                   <MapPin size={20} />
                   Get Directions

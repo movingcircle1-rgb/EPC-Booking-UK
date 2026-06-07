@@ -60,7 +60,7 @@ export default function StaffPortalPage() {
           </p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-[#e71c5e] hover:bg-[#c91852] text-white px-6 py-3 rounded-lg font-semibold transition-all"
+            className="bg-[#C73532] hover:bg-[#A92C2A] text-white px-6 py-3 rounded-lg font-semibold transition-all"
           >
             Refresh Page
           </button>
@@ -119,7 +119,7 @@ export default function StaffPortalPage() {
                 onClick={() => setActiveTab(id as TabType)}
                 className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 px-6 py-4 font-semibold transition-all border-b-2 ${
                   activeTab === id
-                    ? 'text-[#e71c5e] border-[#e71c5e] bg-pink-50'
+                    ? 'text-[#C73532] border-[#C73532] bg-pink-50'
                     : 'text-gray-600 border-transparent hover:bg-gray-50'
                 }`}
               >

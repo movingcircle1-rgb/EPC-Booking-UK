@@ -77,7 +77,7 @@ export default function CompanyPolicies() {
     <div className="bg-white rounded-xl shadow-lg">
       <div className="border-b border-gray-200 px-6 py-4">
         <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <FileText size={24} className="text-[#e71c5e]" />
+          <FileText size={24} className="text-[#C73532]" />
           Company Policies & Procedures
         </h2>
         <p className="text-sm text-gray-600 mt-1">Review and acknowledge company policies</p>
@@ -156,7 +156,7 @@ export default function CompanyPolicies() {
                       {!acknowledged && policy.requires_acknowledgment && (
                         <button
                           onClick={() => handleAcknowledge(policy.id)}
-                          className="flex items-center gap-2 px-4 py-2 bg-[#e71c5e] text-white rounded-lg hover:bg-[#c91852] transition-colors text-sm font-semibold whitespace-nowrap"
+                          className="flex items-center gap-2 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors text-sm font-semibold whitespace-nowrap"
                         >
                           <CheckCircle size={16} />
                           Acknowledge

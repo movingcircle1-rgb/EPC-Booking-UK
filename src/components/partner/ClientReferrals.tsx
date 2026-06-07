@@ -154,7 +154,7 @@ export default function ClientReferrals() {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="flex items-center gap-2 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors"
+          className="flex items-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors"
         >
           <Plus size={20} />
           {showForm ? 'Cancel' : 'New Referral'}
@@ -177,7 +177,7 @@ export default function ClientReferrals() {
                   value={formData.customer_name}
                   onChange={(e) => setFormData({ ...formData, customer_name: e.target.value })}
                   placeholder="Mr. John Smith"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -191,7 +191,7 @@ export default function ClientReferrals() {
                   value={formData.customer_email}
                   onChange={(e) => setFormData({ ...formData, customer_email: e.target.value })}
                   placeholder="john.smith@email.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -205,7 +205,7 @@ export default function ClientReferrals() {
                   value={formData.customer_phone}
                   onChange={(e) => setFormData({ ...formData, customer_phone: e.target.value })}
                   placeholder="07700 900123"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -219,7 +219,7 @@ export default function ClientReferrals() {
                   value={formData.move_from_postcode}
                   onChange={(e) => setFormData({ ...formData, move_from_postcode: e.target.value.toUpperCase() })}
                   placeholder="B1 1AA"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -232,7 +232,7 @@ export default function ClientReferrals() {
                   value={formData.move_to_postcode}
                   onChange={(e) => setFormData({ ...formData, move_to_postcode: e.target.value.toUpperCase() })}
                   placeholder="M1 1AA (optional)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -243,7 +243,7 @@ export default function ClientReferrals() {
                 <select
                   value={formData.property_size}
                   onChange={(e) => setFormData({ ...formData, property_size: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 >
                   <option value="">Select size...</option>
                   <option value="Studio">Studio</option>
@@ -265,7 +265,7 @@ export default function ClientReferrals() {
                   value={formData.move_date}
                   onChange={(e) => setFormData({ ...formData, move_date: e.target.value })}
                   min={new Date().toISOString().split('T')[0]}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -278,7 +278,7 @@ export default function ClientReferrals() {
                   onChange={(e) => setFormData({ ...formData, referral_notes: e.target.value })}
                   rows={3}
                   placeholder="Any special requirements, flexible dates, storage needs, etc."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function ClientReferrals() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50"
+              className="w-full flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50"
             >
               <UserPlus size={20} />
               {loading ? 'Submitting...' : 'Submit Referral'}

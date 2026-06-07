@@ -168,7 +168,7 @@ export default function JobAssignmentManager() {
         </div>
         <button
           onClick={() => setShowCreateForm(!showCreateForm)}
-          className="flex items-center gap-2 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors"
+          className="flex items-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors"
         >
           <Plus size={20} />
           {showCreateForm ? 'Cancel' : 'Assign New Job'}
@@ -191,7 +191,7 @@ export default function JobAssignmentManager() {
                   required
                   value={formData.staff_id}
                   onChange={(e) => setFormData({ ...formData, staff_id: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 >
                   <option value="">Select staff member...</option>
                   {staffList.map((staff) => (
@@ -214,7 +214,7 @@ export default function JobAssignmentManager() {
                   min={new Date().toISOString().split('T')[0]}
                   value={formData.job_date}
                   onChange={(e) => setFormData({ ...formData, job_date: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -228,7 +228,7 @@ export default function JobAssignmentManager() {
                   required
                   value={formData.start_time}
                   onChange={(e) => setFormData({ ...formData, start_time: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -241,7 +241,7 @@ export default function JobAssignmentManager() {
                   required
                   value={formData.job_type}
                   onChange={(e) => setFormData({ ...formData, job_type: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 >
                   <option value="">Select type...</option>
                   {jobTypes.map((type) => (
@@ -262,7 +262,7 @@ export default function JobAssignmentManager() {
                   max="24"
                   value={formData.estimated_duration_hours}
                   onChange={(e) => setFormData({ ...formData, estimated_duration_hours: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -277,7 +277,7 @@ export default function JobAssignmentManager() {
                   value={formData.customer_name}
                   onChange={(e) => setFormData({ ...formData, customer_name: e.target.value })}
                   placeholder="Mr. John Smith"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -293,7 +293,7 @@ export default function JobAssignmentManager() {
                   value={formData.pickup_address}
                   onChange={(e) => setFormData({ ...formData, pickup_address: e.target.value })}
                   placeholder="123 High Street, Birmingham"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -308,7 +308,7 @@ export default function JobAssignmentManager() {
                   value={formData.pickup_postcode}
                   onChange={(e) => setFormData({ ...formData, pickup_postcode: e.target.value.toUpperCase() })}
                   placeholder="B1 1AA"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -323,7 +323,7 @@ export default function JobAssignmentManager() {
                   value={formData.delivery_address}
                   onChange={(e) => setFormData({ ...formData, delivery_address: e.target.value })}
                   placeholder="456 Park Lane, London (optional)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -337,7 +337,7 @@ export default function JobAssignmentManager() {
                   value={formData.delivery_postcode}
                   onChange={(e) => setFormData({ ...formData, delivery_postcode: e.target.value.toUpperCase() })}
                   placeholder="SW1A 1AA (optional)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -352,7 +352,7 @@ export default function JobAssignmentManager() {
                   value={formData.team_members}
                   onChange={(e) => setFormData({ ...formData, team_members: e.target.value })}
                   placeholder="Mike Johnson (Porter), Sarah Williams (Porter)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
                 <p className="text-xs text-gray-500 mt-1">Enter names of other team members who will work with this staff</p>
               </div>
@@ -367,7 +367,7 @@ export default function JobAssignmentManager() {
                   onChange={(e) => setFormData({ ...formData, special_instructions: e.target.value })}
                   rows={3}
                   placeholder="Fragile items, stairs access, parking restrictions, etc."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function JobAssignmentManager() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50"
+              className="w-full flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50"
             >
               <Save size={20} />
               {loading ? 'Assigning...' : 'Assign Job to Staff'}

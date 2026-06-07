@@ -245,7 +245,7 @@ export default function ClientDataManagement() {
         </div>
         <button
           onClick={fetchAllClientData}
-          className="flex items-center gap-2 px-4 py-2 bg-[#e71c5e] text-white rounded-lg hover:bg-[#c91852] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors"
         >
           <RefreshCw size={18} />
           Refresh
@@ -309,7 +309,7 @@ export default function ClientDataManagement() {
             placeholder="Search by email or name..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e71c5e]/20 focus:border-[#e71c5e]"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C73532]/20 focus:border-[#C73532]"
           />
         </div>
 
@@ -373,7 +373,7 @@ export default function ClientDataManagement() {
                           setSelectedClient(client);
                           setShowDetailModal(true);
                         }}
-                        className="p-2 text-gray-600 hover:text-[#e71c5e] hover:bg-gray-100 rounded-lg transition-colors"
+                        className="p-2 text-gray-600 hover:text-[#C73532] hover:bg-gray-100 rounded-lg transition-colors"
                         title="View Details"
                       >
                         <Eye size={18} />

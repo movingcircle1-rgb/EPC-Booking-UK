@@ -76,7 +76,7 @@ export default function RoleManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#e71c5e]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
       </div>
     );
   }
@@ -91,7 +91,7 @@ export default function RoleManagement() {
             onClick={() => setRoleFilter('all')}
             className={`p-4 rounded-lg border-2 transition-all ${
               roleFilter === 'all'
-                ? 'border-[#e71c5e] bg-[#e71c5e] bg-opacity-10'
+                ? 'border-[#C73532] bg-[#C73532] bg-opacity-10'
                 : 'border-gray-200 hover:border-gray-300'
             }`}
           >
@@ -168,7 +168,7 @@ export default function RoleManagement() {
               placeholder="Search by name or email..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
             />
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function RoleManagement() {
                 <tr key={user.id} className="border-b border-gray-100 hover:bg-gray-50">
                   <td className="py-4 px-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#e71c5e] to-[#c91852] flex items-center justify-center text-white font-bold">
+                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C73532] to-[#A92C2A] flex items-center justify-center text-white font-bold">
                         {(user.full_name || user.email || 'U').charAt(0).toUpperCase()}
                       </div>
                       <div>

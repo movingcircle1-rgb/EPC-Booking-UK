@@ -238,7 +238,7 @@ export default function TradePortalPage() {
               >
                 <Bell size={22} />
                 {unreadCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-[#e71c5e] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-[#C73532] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                     {unreadCount}
                   </span>
                 )}
@@ -263,7 +263,7 @@ export default function TradePortalPage() {
                 onClick={() => setActiveTab(id as TabType)}
                 className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                   activeTab === id
-                    ? 'text-[#e71c5e] border-b-2 border-[#e71c5e]'
+                    ? 'text-[#C73532] border-b-2 border-[#C73532]'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -277,13 +277,13 @@ export default function TradePortalPage() {
         {activeTab === 'dashboard' && (
           <div className="space-y-6">
             <div className="grid md:grid-cols-4 gap-4">
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#e71c5e]">
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#C73532]">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-semibold text-gray-600">Available Jobs</p>
                     <p className="text-3xl font-bold text-gray-900 mt-1">{jobs.length}</p>
                   </div>
-                  <Briefcase size={32} className="text-[#e71c5e]" />
+                  <Briefcase size={32} className="text-[#C73532]" />
                 </div>
               </div>
 
@@ -351,30 +351,30 @@ export default function TradePortalPage() {
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     onClick={() => setActiveTab('jobs')}
-                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all"
+                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all"
                   >
-                    <Search size={24} className="text-[#e71c5e] mb-2" />
+                    <Search size={24} className="text-[#C73532] mb-2" />
                     <p className="font-semibold text-sm">Browse Jobs</p>
                   </button>
                   <button
                     onClick={() => setActiveTab('post-job')}
-                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all"
+                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all"
                   >
-                    <Plus size={24} className="text-[#e71c5e] mb-2" />
+                    <Plus size={24} className="text-[#C73532] mb-2" />
                     <p className="font-semibold text-sm">Post New Job</p>
                   </button>
                   <button
                     onClick={() => setActiveTab('book-service')}
-                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all"
+                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all"
                   >
-                    <Truck size={24} className="text-[#e71c5e] mb-2" />
+                    <Truck size={24} className="text-[#C73532] mb-2" />
                     <p className="font-semibold text-sm">Book Service</p>
                   </button>
                   <button
                     onClick={() => setActiveTab('account')}
-                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#e71c5e] hover:shadow-md transition-all"
+                    className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all"
                   >
-                    <User size={24} className="text-[#e71c5e] mb-2" />
+                    <User size={24} className="text-[#C73532] mb-2" />
                     <p className="font-semibold text-sm">My Account</p>
                   </button>
                 </div>
@@ -393,13 +393,13 @@ export default function TradePortalPage() {
                     placeholder="Search by title, postcode..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   />
                 </div>
                 <select
                   value={filterType}
                   onChange={(e) => setFilterType(e.target.value)}
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 >
                   <option value="all">All Types</option>
                   <option value="removal">Removals</option>
@@ -473,7 +473,7 @@ export default function TradePortalPage() {
                         {job.budget_amount && (
                           <div>
                             <p className="text-sm text-gray-600">Fixed Price</p>
-                            <p className="font-bold text-[#e71c5e]">£{parseFloat(job.budget_amount).toFixed(2)}</p>
+                            <p className="font-bold text-[#C73532]">£{parseFloat(job.budget_amount).toFixed(2)}</p>
                           </div>
                         )}
                       </div>
@@ -512,7 +512,7 @@ export default function TradePortalPage() {
                             <button
                               onClick={() => handleSubmitBid(job.id)}
                               disabled={submitting}
-                              className="flex-1 bg-[#e71c5e] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#c91852] disabled:opacity-50"
+                              className="flex-1 bg-[#C73532] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#A92C2A] disabled:opacity-50"
                             >
                               {submitting ? 'Submitting...' : 'Submit Bid'}
                             </button>
@@ -528,7 +528,7 @@ export default function TradePortalPage() {
                         <div className="flex gap-2">
                           <button
                             onClick={() => setSelectedJob(job.id)}
-                            className="flex-1 bg-[#e71c5e] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#c91852] transition-colors"
+                            className="flex-1 bg-[#C73532] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors"
                           >
                             Submit Bid
                           </button>
@@ -578,7 +578,7 @@ export default function TradePortalPage() {
                       </div>
                       <div>
                         <p className="text-sm text-gray-600">Total</p>
-                        <p className="font-bold text-[#e71c5e]">£{parseFloat(booking.total_amount).toFixed(2)}</p>
+                        <p className="font-bold text-[#C73532]">£{parseFloat(booking.total_amount).toFixed(2)}</p>
                       </div>
                     </div>
                     {booking.notes && (

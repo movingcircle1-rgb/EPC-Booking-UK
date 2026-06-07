@@ -242,7 +242,7 @@ export default function MarketingMaterials() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#e71c5e]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
       </div>
     );
   }
@@ -263,7 +263,7 @@ export default function MarketingMaterials() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-lg font-semibold transition-all ${
                   selectedCategory === category
-                    ? 'bg-[#e71c5e] text-white shadow-md'
+                    ? 'bg-[#C73532] text-white shadow-md'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -285,13 +285,13 @@ export default function MarketingMaterials() {
               {filteredMaterials.map((material) => (
                 <div
                   key={material.id}
-                  className="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-[#e71c5e] transition-all"
+                  className="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-[#C73532] transition-all"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
                       {getFileIcon(material.file_type)}
                     </div>
-                    <span className="px-3 py-1 bg-[#e71c5e] bg-opacity-10 text-[#e71c5e] text-xs font-bold rounded-full">
+                    <span className="px-3 py-1 bg-[#C73532] bg-opacity-10 text-[#C73532] text-xs font-bold rounded-full">
                       {material.category}
                     </span>
                   </div>
@@ -316,7 +316,7 @@ export default function MarketingMaterials() {
                       <button
                         onClick={() => handleDownload(material)}
                         disabled={downloading === material.id}
-                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-[#e71c5e] text-white rounded-lg hover:bg-[#c91852] transition-colors text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         {downloading === material.id ? (
                           <>
@@ -365,7 +365,7 @@ export default function MarketingMaterials() {
 
         <div className="p-6 bg-gray-50 border-t border-gray-200">
           <div className="flex items-start gap-3">
-            <ExternalLink size={20} className="text-[#e71c5e] flex-shrink-0 mt-1" />
+            <ExternalLink size={20} className="text-[#C73532] flex-shrink-0 mt-1" />
             <div>
               <h4 className="font-bold text-gray-900 mb-1">Need Custom Materials?</h4>
               <p className="text-sm text-gray-600">
@@ -451,7 +451,7 @@ export default function MarketingMaterials() {
                   required
                   value={orderForm.quantity}
                   onChange={(e) => setOrderForm({ ...orderForm, quantity: parseInt(e.target.value) || 1 })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -464,7 +464,7 @@ export default function MarketingMaterials() {
                   required
                   value={orderForm.deliveryContactName}
                   onChange={(e) => setOrderForm({ ...orderForm, deliveryContactName: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -477,7 +477,7 @@ export default function MarketingMaterials() {
                   rows={3}
                   value={orderForm.deliveryAddress}
                   onChange={(e) => setOrderForm({ ...orderForm, deliveryAddress: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -490,7 +490,7 @@ export default function MarketingMaterials() {
                   required
                   value={orderForm.deliveryPostcode}
                   onChange={(e) => setOrderForm({ ...orderForm, deliveryPostcode: e.target.value.toUpperCase() })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="B1 1AA"
                 />
               </div>
@@ -504,7 +504,7 @@ export default function MarketingMaterials() {
                   required
                   value={orderForm.deliveryPhone}
                   onChange={(e) => setOrderForm({ ...orderForm, deliveryPhone: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                 />
               </div>
 
@@ -516,7 +516,7 @@ export default function MarketingMaterials() {
                   rows={2}
                   value={orderForm.orderNotes}
                   onChange={(e) => setOrderForm({ ...orderForm, orderNotes: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
                   placeholder="Any special instructions or requirements..."
                 />
               </div>
@@ -542,7 +542,7 @@ export default function MarketingMaterials() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex-1 px-6 py-3 bg-[#e71c5e] text-white rounded-lg hover:bg-[#c91852] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 px-6 py-3 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {submitting ? 'Submitting...' : 'Submit Order'}
                 </button>

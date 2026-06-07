@@ -162,7 +162,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
                 disabled={availableCount === 0}
                 className={`p-4 border-2 rounded-lg text-left transition-all ${
                   formData.serviceType === value
-                    ? 'border-[#e71c5e] bg-pink-50'
+                    ? 'border-[#C73532] bg-pink-50'
                     : availableCount === 0
                     ? 'border-gray-200 bg-gray-50 opacity-50 cursor-not-allowed'
                     : 'border-gray-200 hover:border-gray-300'
@@ -170,7 +170,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <Icon size={24} className={formData.serviceType === value ? 'text-[#e71c5e]' : 'text-gray-400'} />
+                    <Icon size={24} className={formData.serviceType === value ? 'text-[#C73532]' : 'text-gray-400'} />
                     <span className="font-semibold text-gray-900">{label}</span>
                   </div>
                   <span className={`text-xs font-semibold px-2 py-1 rounded-full ${
@@ -225,7 +225,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
             value={formData.bookingDate}
             onChange={(e) => setFormData({ ...formData, bookingDate: e.target.value })}
             min={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
 
@@ -239,7 +239,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
             required
             value={formData.startTime}
             onChange={(e) => setFormData({ ...formData, startTime: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
       </div>
@@ -252,7 +252,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
           required
           value={formData.durationHours}
           onChange={(e) => setFormData({ ...formData, durationHours: e.target.value })}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         >
           <option value="4">4 hours</option>
           <option value="6">6 hours</option>
@@ -273,7 +273,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
             value={formData.pickupLocation}
             onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
             placeholder="Enter full address or postcode"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
 
@@ -286,7 +286,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
             value={formData.deliveryLocation}
             onChange={(e) => setFormData({ ...formData, deliveryLocation: e.target.value })}
             placeholder="Enter full address or postcode (if applicable)"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
           />
         </div>
       </div>
@@ -300,7 +300,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
           onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
           rows={4}
           placeholder="Any special requirements or additional information..."
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e71c5e] focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
         />
       </div>
 
@@ -308,7 +308,7 @@ export default function ServiceBookingForm({ onSuccess, onCancel }: ServiceBooki
         <button
           type="submit"
           disabled={loading}
-          className="flex-1 bg-[#e71c5e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c91852] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? 'Submitting...' : 'Submit Booking Request'}
         </button>

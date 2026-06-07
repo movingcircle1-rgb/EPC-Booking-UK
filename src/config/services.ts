@@ -1,10 +1,35 @@
 export type ServiceDefinition = {
   slug: string
   label: string
+  shortLabel?: string
+  description?: string
 }
 
 export const SERVICES: readonly ServiceDefinition[] = [
-  { slug: 'test-service', label: 'Test Service' }
+  {
+    slug: 'domestic-epc',
+    label: 'Domestic EPC Certificates',
+    shortLabel: 'Domestic EPC',
+    description: 'EPC certificates for houses, flats, maisonettes and residential properties.'
+  },
+  {
+    slug: 'landlord-epc',
+    label: 'Landlord EPC Certificates',
+    shortLabel: 'Landlord EPC',
+    description: 'EPC appointments for rental properties, landlords, agents and portfolio compliance.'
+  },
+  {
+    slug: 'commercial-epc',
+    label: 'Commercial EPC Certificates',
+    shortLabel: 'Commercial EPC',
+    description: 'Energy Performance Certificates for commercial premises and business properties.'
+  },
+  {
+    slug: 'epc-renewals',
+    label: 'EPC Renewals',
+    shortLabel: 'EPC Renewals',
+    description: 'Renew an expired or soon-to-expire EPC certificate for sale, let or compliance.'
+  }
 ] as const
 
 const SERVICE_LABELS = new Map(

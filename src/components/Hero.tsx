@@ -15,10 +15,10 @@ export default function Hero({ onGetQuote, headingLevel = 'h1' }: HeroProps) {
   const HeadingTag = headingLevel;
 
   return (
-    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+    <div className="relative bg-[#1F3447] text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7464230/pexels-photo-7464230.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#be0e0c]/30 via-gray-900/80 to-gray-900/90"></div>
+      <div className="absolute inset-0 bg-[#1F3447]/90"></div>
 
       <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
         <div className="max-w-3xl">

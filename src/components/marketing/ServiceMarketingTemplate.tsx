@@ -34,12 +34,12 @@ export default function ServiceMarketingTemplate({
   ctaText,
 }: Props) {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-[#1F3447]">
       {/* Hero */}
-      <section className="bg-slate-900 text-white">
+      <section className="bg-[#1F3447] text-white">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-24">
           <div className="max-w-4xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
               National Removals and Storage
             </p>
 
@@ -48,7 +48,7 @@ export default function ServiceMarketingTemplate({
             </h1>
 
             {intro ? (
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200 md:text-xl">
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 md:text-xl">
                 {intro}
               </p>
             ) : null}
@@ -56,7 +56,7 @@ export default function ServiceMarketingTemplate({
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact/"
-                className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-[#1F3447] transition hover:bg-gray-100"
               >
                 Get a Quote
               </a>
@@ -77,7 +77,7 @@ export default function ServiceMarketingTemplate({
           <div className="mx-auto max-w-7xl px-6 py-14 md:px-8">
             <div className="max-w-4xl">
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-10">
-                <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
+                <h2 className="text-2xl font-bold tracking-tight text-[#1F3447] md:text-3xl">
                   Trusted Support When You Need It Most
                 </h2>
                 <p className="mt-4 text-base leading-8 text-slate-700 md:text-lg">
@@ -94,7 +94,7 @@ export default function ServiceMarketingTemplate({
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1F3447] md:text-4xl">
                 How We Help
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -113,7 +113,7 @@ export default function ServiceMarketingTemplate({
                     {block.block_position}
                   </div>
 
-                  <h3 className="text-xl font-semibold text-slate-900">
+                  <h3 className="text-xl font-semibold text-[#1F3447]">
                     {block.heading}
                   </h3>
 
@@ -132,7 +132,7 @@ export default function ServiceMarketingTemplate({
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1F3447] md:text-4xl">
                 Why Choose National Removals and Storage
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
@@ -145,7 +145,7 @@ export default function ServiceMarketingTemplate({
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="text-lg font-semibold text-[#1F3447]">
                   Fast Response
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
@@ -155,7 +155,7 @@ export default function ServiceMarketingTemplate({
               </div>
 
               <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="text-lg font-semibold text-[#1F3447]">
                   Secure Handling
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
@@ -165,7 +165,7 @@ export default function ServiceMarketingTemplate({
               </div>
 
               <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="text-lg font-semibold text-[#1F3447]">
                   Storage Options
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
@@ -175,7 +175,7 @@ export default function ServiceMarketingTemplate({
               </div>
 
               <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="text-lg font-semibold text-[#1F3447]">
                   Professional Coordination
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
@@ -193,7 +193,7 @@ export default function ServiceMarketingTemplate({
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1F3447] md:text-4xl">
                 Frequently Asked Questions
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -208,7 +208,7 @@ export default function ServiceMarketingTemplate({
                   key={faq.position}
                   className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm"
                 >
-                  <h3 className="text-lg font-semibold text-slate-900">
+                  <h3 className="text-lg font-semibold text-[#1F3447]">
                     {faq.question}
                   </h3>
                   <p className="mt-3 text-base leading-7 text-slate-600">
@@ -223,7 +223,7 @@ export default function ServiceMarketingTemplate({
 
       {/* CTA */}
       {ctaTitle || ctaText ? (
-        <section className="bg-slate-900 text-white">
+        <section className="bg-[#1F3447] text-white">
           <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10">
               {ctaTitle ? (
@@ -233,7 +233,7 @@ export default function ServiceMarketingTemplate({
               ) : null}
 
               {ctaText ? (
-                <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-200">
+                <p className="mt-4 max-w-3xl text-lg leading-8 text-white/80">
                   {ctaText}
                 </p>
               ) : null}
@@ -241,7 +241,7 @@ export default function ServiceMarketingTemplate({
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="/contact/"
-                  className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                  className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-[#1F3447] transition hover:bg-gray-100"
                 >
                   Contact Us
                 </a>

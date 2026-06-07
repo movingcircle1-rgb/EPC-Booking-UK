@@ -1,0 +1,22 @@
+<svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Sirelo Logo Mark - House/Moving Icon -->
+    <path d="M35 25L25 35V50H30V42H40V50H45V35L35 25Z" fill="#FF6B35"/>
+    <rect x="32" y="45" width="6" height="5" fill="#FF6B35"/>
+
+    <!-- "SIRELO" Text -->
+    <text x="60" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1E3A8A">SIRELO</text>
+
+    <!-- "Trusted Moving Partner" Subtitle -->
+    <text x="60" y="52" font-family="Arial, sans-serif" font-size="10" fill="#666666">Trusted Moving Partner</text>
+
+    <!-- Trust Badge Stars -->
+    <g transform="translate(60, 56)">
+      <path d="M5 7.5l-2.9 1.5 0.6-3.2L0.2 3.4l3.2-0.5L5 0l1.5 3 3.2 0.5-2.3 2.2 0.6 3.2z" fill="#FFB800" transform="scale(0.7)"/>
+      <path d="M5 7.5l-2.9 1.5 0.6-3.2L0.2 3.4l3.2-0.5L5 0l1.5 3 3.2 0.5-2.3 2.2 0.6 3.2z" fill="#FFB800" transform="translate(8, 0) scale(0.7)"/>
+      <path d="M5 7.5l-2.9 1.5 0.6-3.2L0.2 3.4l3.2-0.5L5 0l1.5 3 3.2 0.5-2.3 2.2 0.6 3.2z" fill="#FFB800" transform="translate(16, 0) scale(0.7)"/>
+      <path d="M5 7.5l-2.9 1.5 0.6-3.2L0.2 3.4l3.2-0.5L5 0l1.5 3 3.2 0.5-2.3 2.2 0.6 3.2z" fill="#FFB800" transform="translate(24, 0) scale(0.7)"/>
+      <path d="M5 7.5l-2.9 1.5 0.6-3.2L0.2 3.4l3.2-0.5L5 0l1.5 3 3.2 0.5-2.3 2.2 0.6 3.2z" fill="#FFB800" transform="translate(32, 0) scale(0.7)"/>
+    </g>
+  </g>
+</svg>

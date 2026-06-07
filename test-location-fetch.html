@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Location Fetch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .result {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .error {
+            border-left-color: #f44336;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Dynamic Location Test</h1>
+        <p>Test fetching location data from Supabase</p>
+
+        <div>
+            <input type="text" id="citySlug" value="aberdeen" placeholder="Enter city slug">
+            <button onclick="testFetch()">Fetch Location</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://mrpmrvppxbqjjopgksct.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ycG1ydnBweGJxampvcGdrc2N0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE2NTc1NjQsImV4cCI6MjA3NzIzMzU2NH0.xMivdNAej7msWjrdpdDfURmbgOQtnWcQJHKfaK53Mr4';
+
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        async function testFetch() {
+            const citySlug = document.getElementById('citySlug').value;
+            const resultDiv = document.getElementById('result');
+
+            resultDiv.innerHTML = '<div class="result">⏳ Fetching data for: ' + citySlug + '...</div>';
+
+            try {
+                console.log('Fetching location:', citySlug);
+
+                const { data, error } = await supabase
+                    .from('locations')
+                    .select('*')
+                    .eq('city_slug', citySlug)
+                    .maybeSingle();
+
+                if (error) {
+                    console.error('Supabase error:', error);
+                    resultDiv.innerHTML = '<div class="result error">❌ Error: ' + JSON.stringify(error, null, 2) + '</div>';
+                    return;
+                }
+
+                if (!data) {
+                    console.warn('No data found for:', citySlug);
+                    resultDiv.innerHTML = '<div class="result error">⚠️ No location found for slug: ' + citySlug + '</div>';
+                    return;
+                }
+
+                console.log('Location data:', data);
+                resultDiv.innerHTML = '<div class="result">✅ Success! Location found:\n\n' + JSON.stringify(data, null, 2) + '</div>';
+
+            } catch (err) {
+                console.error('Fetch error:', err);
+                resultDiv.innerHTML = '<div class="result error">❌ Exception: ' + err.message + '</div>';
+            }
+        }
+
+        // Auto-test on load
+        window.addEventListener('load', () => {
+            setTimeout(testFetch, 500);
+        });
+    </script>
+</body>
+</html>

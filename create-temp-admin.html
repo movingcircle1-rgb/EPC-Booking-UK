@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Temp Admin User</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        .step {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .step h2 {
+            color: #2d3748;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .step p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        button:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+        .result.success {
+            background: #c6f6d5;
+            border: 2px solid #38a169;
+            color: #22543d;
+            display: block;
+        }
+        .result.error {
+            background: #fed7d7;
+            border: 2px solid #e53e3e;
+            color: #742a2a;
+            display: block;
+        }
+        .credentials {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .credentials div {
+            margin: 8px 0;
+        }
+        .credentials strong {
+            color: #90cdf4;
+        }
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .warning {
+            background: #fef5e7;
+            border: 2px solid #f39c12;
+            color: #7d6608;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .info {
+            background: #ebf8ff;
+            border: 2px solid #3182ce;
+            color: #2c5282;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Create Temp Admin User</h1>
+        <p class="subtitle">Automated setup for temporary admin portal access</p>
+
+        <div class="info">
+            <strong>ℹ️ Before you start:</strong><br>
+            You need to be logged in as an admin to create this user.
+        </div>
+
+        <div class="step">
+            <h2>Step 1: Login as Admin</h2>
+            <p>Click the button below to login with your admin account (manii@godesign.pk or kako@godeisgn.pk)</p>
+            <button id="loginBtn" onclick="handleLogin()">Login with Admin Account</button>
+        </div>
+
+        <div class="step" id="createStep" style="display: none;">
+            <h2>Step 2: Create Temp Admin</h2>
+            <p>Once logged in, click this button to automatically create the temporary admin user:</p>
+            <button id="createBtn" onclick="createTempAdmin()">Create Temp Admin User</button>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://mrpmrvppxbqjjopgksct.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ycG1ydnBweGJxampvcGdrc2N0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE2NTc1NjQsImV4cCI6MjA3NzIzMzU2NH0.xMivdNAej7msWjrdpdDfURmbgOQtnWcQJHKfaK53Mr4';
+
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        async function handleLogin() {
+            const email = prompt('Enter your admin email (manii@godesign.pk or kako@godeisgn.pk):');
+            if (!email) return;
+
+            const password = prompt('Enter your password:');
+            if (!password) return;
+
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('loginBtn').disabled = true;
+
+            try {
+                const { data, error } = await supabase.auth.signInWithPassword({
+                    email: email,
+                    password: password
+                });
+
+                if (error) throw error;
+
+                // Check if user is admin
+                const { data: roleData, error: roleError } = await supabase
+                    .from('user_roles')
+                    .select('role')
+                    .eq('user_id', data.user.id)
+                    .single();
+
+                if (roleError || !roleData || roleData.role !== 'admin') {
+                    throw new Error('You must be an admin to create temp admin users');
+                }
+
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('createStep').style.display = 'block';
+                showResult('success', '✅ Admin login successful! You can now create the temp admin user.');
+                document.getElementById('loginBtn').textContent = '✓ Logged In';
+            } catch (error) {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('loginBtn').disabled = false;
+                showResult('error', '❌ Login failed: ' + error.message);
+            }
+        }
+
+        async function createTempAdmin() {
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('createBtn').disabled = true;
+
+            try {
+                const { data: { session } } = await supabase.auth.getSession();
+
+                if (!session) {
+                    throw new Error('No active session. Please login first.');
+                }
+
+                const response = await fetch(`${SUPABASE_URL}/functions/v1/admin-create-user`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${session.access_token}`,
+                        'apikey': SUPABASE_ANON_KEY
+                    },
+                    body: JSON.stringify({
+                        email: 'tempadmin@nationalremovalsandstorage.co.uk',
+                        fullName: 'Temporary Admin',
+                        phone: '+44 7700 900000',
+                        role: 'temp_admin'
+                    })
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || 'Failed to create user');
+                }
+
+                document.getElementById('loader').style.display = 'none';
+
+                const credentialsHTML = `
+                    <div class="credentials">
+                        <div><strong>✅ SUCCESS! Temp Admin Created</strong></div>
+                        <div>━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+                        <div><strong>Login URL:</strong> https://nationalremovalsandstorage.co.uk/login</div>
+                        <div><strong>Email:</strong> tempadmin@nationalremovalsandstorage.co.uk</div>
+                        <div><strong>Password:</strong> Check your email (reset link sent)</div>
+                        <div>━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+                        <div><strong>Portal URL:</strong> https://nationalremovalsandstorage.co.uk/temp-admin</div>
+                        <div>━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+                        <div><strong>Access:</strong></div>
+                        <div>✓ Locations Management</div>
+                        <div>✓ Auto-Linking Management</div>
+                        <div>✗ All other admin features (restricted)</div>
+                    </div>
+                `;
+
+                showResult('success', '🎉 Temp Admin user created successfully!' + credentialsHTML);
+                document.getElementById('createBtn').textContent = '✓ User Created';
+            } catch (error) {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('createBtn').disabled = false;
+                showResult('error', '❌ Failed to create user: ' + error.message);
+            }
+        }
+
+        function showResult(type, message) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = `result ${type}`;
+            resultDiv.innerHTML = message;
+        }
+
+        // Check if already logged in
+        supabase.auth.getSession().then(({ data: { session } }) => {
+            if (session) {
+                supabase.from('user_roles')
+                    .select('role')
+                    .eq('user_id', session.user.id)
+                    .single()
+                    .then(({ data, error }) => {
+                        if (!error && data && data.role === 'admin') {
+                            document.getElementById('createStep').style.display = 'block';
+                            document.getElementById('loginBtn').textContent = '✓ Already Logged In';
+                            document.getElementById('loginBtn').disabled = true;
+                            showResult('success', '✅ You are logged in as admin. You can create the temp admin user now.');
+                        }
+                    });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+import React from 'react'
+
+type Props = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+  to: string
+}
+
+export default function SafeLink({ to, children, ...rest }: Props) {
+  return (
+    <a href={to} {...rest}>
+      {children}
+    </a>
+  )
+}

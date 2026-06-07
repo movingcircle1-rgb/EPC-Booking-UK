@@ -1,0 +1,121 @@
+[build]
+  publish = "dist/client"
+  command = "npm run build"
+
+# =========================================================
+# Portal Aliases (root URLs → canonical /portal/* routes)
+# =========================================================
+
+[[redirects]]
+  from = "/login"
+  to = "/portal/login"
+  status = 301
+  force = true
+
+# =========================================================
+# Redirects
+# Canonical Structure = /locations/:city/:service/
+# =========================================================
+
+[[redirects]]
+  from = "/removals-:city"
+  to = "/locations/:city/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/house-removals-:city"
+  to = "/locations/:city/house-removals/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/office-removals-:city"
+  to = "/locations/:city/office-removals/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packing-services-:city"
+  to = "/locations/:city/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/storage-:city"
+  to = "/locations/:city/storage-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/furniture-removal-:city"
+  to = "/locations/:city/furniture-removal/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/removals/:city"
+  to = "/locations/:city/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/removals/:city/"
+  to = "/locations/:city/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/storage/:city"
+  to = "/locations/:city/storage-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/storage/:city/"
+  to = "/locations/:city/storage-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/:city/packing"
+  to = "/locations/:city/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/:city/packing/"
+  to = "/locations/:city/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/:city/storage"
+  to = "/locations/:city/storage-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/:city/storage/"
+  to = "/locations/:city/storage-solutions/"
+  status = 301
+  force = true
+
+# =========================================================
+# SPA rewrites (ONLY for app sections)
+# =========================================================
+
+[[redirects]]
+  from = "/portal/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/index.html"
+  status = 200
+
+
+# NOTE:
+# Do NOT add a /locations/* 200 rewrite.
+# Netlify must serve prerendered /locations/**/index.html files directly.

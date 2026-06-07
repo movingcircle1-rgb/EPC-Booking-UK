@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Sitemap: https://nationalremovalsandstorage.co.uk/sitemap.xml
+
+# Disallow admin and portal areas
+Disallow: /admin
+Disallow: /temp-admin
+Disallow: /admin2
+Disallow: /staff-portal
+Disallow: /partner-portal
+Disallow: /trade-portal
+Disallow: /client-portal
+Disallow: /login
+Disallow: /signup
+Disallow: /test-location
+
+# Allow all crawlers with no delay
+Crawl-delay: 0

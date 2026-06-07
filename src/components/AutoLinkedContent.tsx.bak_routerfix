@@ -1,0 +1,63 @@
+import { useEffect, useMemo, useState } from 'react'
+import {
+  fetchActiveKeywords,
+  getExistingLinks,
+  processContentWithLinks,
+  trackPageLink
+} from '../lib/auto-linking'
+
+interface AutoLinkedContentProps {
+  content: string
+  className?: string
+  enableLinking?: boolean
+}
+
+export default function AutoLinkedContent({
+  content,
+  className = '',
+  enableLinking = true
+}: AutoLinkedContentProps) {
+  const [processedContent, setProcessedContent] = useState(content)
+  const inRouter = useInRouterContext()
+  const location = (typeof window !== "undefined") ? { pathname: window.location.pathname } : null
+
+  const pathname = useMemo(() => {
+    if (location?.pathname) return location.pathname
+    if (typeof window !== 'undefined') return window.location.pathname
+    return '/' // SSR fallback
+  }, [location?.pathname])
+
+  useEffect(() => {
+    if (!enableLinking) {
+      setProcessedContent(content)
+      return
+    }
+
+    const processLinks = async () => {
+      try {
+        const keywords = await fetchActiveKeywords()
+        const existingLinks = await getExistingLinks(pathname)
+
+        const { content: linkedContent, newLinks } = processContentWithLinks(
+          content,
+          keywords,
+          pathname,
+          existingLinks
+        )
+
+        setProcessedContent(linkedContent)
+
+        for (const link of newLinks) {
+          await trackPageLink(link)
+        }
+      } catch (error) {
+        console.error('Error processing auto-links:', error)
+        setProcessedContent(content)
+      }
+    }
+
+    processLinks()
+  }, [content, pathname, enableLinking])
+
+  return <div className={className} dangerouslySetInnerHTML={{ __html: processedContent }} />
+}

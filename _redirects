@@ -1,0 +1,23 @@
+# =========================================================
+# EXACT LEGACY URL REDIRECTS (NO DYNAMIC RULES)
+# =========================================================
+
+/office-removals-stafford     /locations/stafford/office-removals/      301!
+/storage-telford              /locations/telford/storage-solutions/     301!
+/storage-stafford             /locations/stafford/storage-solutions/    301!
+/removals-cannock             /locations/cannock/                       301!
+/removals-willenhall          /locations/willenhall/                    301!
+/removals-wolverhampton       /locations/wolverhampton/                 301!
+/packing-services-stafford    /locations/stafford/packing-services/     301!
+/packing-services-telford     /locations/telford/packing-services/      301!
+/office-removals-telford      /locations/telford/office-removals/       301!
+/office-removals-cannock      /locations/cannock/office-removals/       301!
+/house-removals-willenhall    /locations/willenhall/house-removals/     301!
+/locations/wolverhampton/packing  /locations/wolverhampton/packing-services/ 301!
+
+# Portal shortcuts (normalize trailing slash only)
+/client-portal   /client-portal/   301!
+/partner-portal  /partner-portal/  301!
+/staff-portal    /staff-portal/    301!
+/trade-portal    /trade-portal/    301!
+/portal/login    /portal/login/    301!

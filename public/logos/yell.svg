@@ -1,0 +1,16 @@
+<svg width="160" height="80" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Yell Circle Background -->
+    <circle cx="35" cy="40" r="20" fill="#FFE600"/>
+
+    <!-- Yell "Y" in circle -->
+    <text x="35" y="52" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#000000" text-anchor="middle">Y</text>
+
+    <!-- "yell.com" Text -->
+    <text x="70" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#000000">yell</text>
+    <text x="115" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#666666">.com</text>
+
+    <!-- Subtitle -->
+    <text x="70" y="52" font-family="Arial, sans-serif" font-size="10" fill="#666666">Business Directory</text>
+  </g>
+</svg>

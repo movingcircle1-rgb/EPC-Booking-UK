@@ -1,0 +1,50 @@
+{
+  "name": "vite-react-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vike dev",
+    "generate:sitemap": "node scripts/generate-dynamic-sitemap.js",
+    "prerender:locations": "node scripts/prerender-locations.js",
+    "copy:netlify": "node scripts/copy-netlify-files.js",
+    "build": "npm run prerender:locations && npm run generate:sitemap && vike build && node scripts/assert-prerender.js && npm run copy:netlify",
+    "preview": "vike preview",
+    "check:ssr:locations": "bash scripts/check-ssr-locations.sh",
+    "postbuild": "bash scripts/postbuild.sh"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.103.0",
+    "csv-parse": "6.1.0",
+    "jspdf": "^4.1.0",
+    "lucide-react": "0.344.0",
+    "openai": "6.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-helmet-async": "2.0.5",
+    "react-router": "6.30.3"
+  },
+  "devDependencies": {
+    "@compiled/react": "^0.20.0",
+    "@eslint/js": "9.9.1",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "10.4.18",
+    "dotenv": "^16.6.1",
+    "eslint": "9.9.1",
+    "eslint-plugin-react-hooks": "5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "0.4.11",
+    "globals": "15.9.0",
+    "postcss": "8.4.35",
+    "source-map": "^0.7.6",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.5.3",
+    "typescript-eslint": "8.3.0",
+    "vike": "^0.4.255",
+    "vite": "^7.3.1"
+  }
+}

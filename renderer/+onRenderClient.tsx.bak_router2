@@ -1,0 +1,41 @@
+
+// renderer/+onRenderClient.tsx
+import React from 'react'
+import '../src/index.css' // or the CSS file where you import @tailwind directives
+import { createRoot, hydrateRoot, type Root } from 'react-dom/client'
+import type { OnRenderClientAsync } from 'vike/types'
+
+import AppShell from './AppShell'
+
+let reactRoot: Root | null = null
+
+export const onRenderClient: OnRenderClientAsync = async (pageContext) => {
+  const { Page, pageProps } = pageContext
+
+  const container =
+    document.getElementById('root') ??
+    document.getElementById('page-view') ??
+    document.getElementById('app')
+
+  if (!container) {
+    throw new Error('Cannot find mount element. Expected #root or #page-view (or #app).')
+  }
+
+  const app = (
+
+      <AppShell isSsr={shouldHydrate}>
+        <Page {...(pageProps as any)} pageContext={pageContext} />
+      </AppShell>
+
+  )
+
+  const shouldHydrate = container.innerHTML.trim().length > 0
+
+  if (!reactRoot) {
+    reactRoot = shouldHydrate ? hydrateRoot(container, app) : createRoot(container)
+    if (!shouldHydrate) reactRoot.render(app)
+    return
+  }
+
+  reactRoot.render(app)
+}

@@ -1,0 +1,41 @@
+import React from 'react'
+import { createRoot, hydrateRoot, Root } from 'react-dom/client'
+import type { OnRenderClientAsync } from 'vike/types'
+
+import AppShell from './AppShell'
+
+let reactRoot: Root | null = null
+
+export const onRenderClient: OnRenderClientAsync = async (pageContext) => {
+  const { Page, pageProps } = pageContext
+
+  const container =
+    document.getElementById('root') ??
+    document.getElementById('page-view') ??
+    document.getElementById('app')
+
+  if (!container) {
+    throw new Error('Cannot find mount element. Expected #root or #page-view (or #app).')
+  }
+
+  // TDZ-safe: compute shouldHydrate BEFORE using it
+  const shouldHydrate = container.innerHTML.trim().length > 0
+
+  const app = (
+    <AppShell isSsr={shouldHydrate}>
+      <Page {...(pageProps as any)} pageContext={pageContext} />
+    </AppShell>
+  )
+
+  if (!reactRoot) {
+    if (shouldHydrate) {
+      reactRoot = hydrateRoot(container, app) as unknown as Root
+    } else {
+      reactRoot = createRoot(container)
+      reactRoot.render(app)
+    }
+    return
+  }
+
+  reactRoot.render(app)
+}

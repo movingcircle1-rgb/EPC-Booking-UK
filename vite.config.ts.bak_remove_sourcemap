@@ -1,0 +1,28 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import vike from 'vike/plugin'
+
+export default defineConfig({
+  base: '/', // ✅ critical for Netlify + nested routes
+  plugins: [react(), vike()],
+  server: {
+    host: '127.0.0.1',
+    port: 3000
+  },
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+    include: ['react-helmet-async']
+  },
+  ssr: {
+    sourcemap: true,
+    noExternal: ['react-helmet-async']
+  },
+  build: {
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
+})

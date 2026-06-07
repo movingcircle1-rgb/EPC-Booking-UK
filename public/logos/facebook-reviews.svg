@@ -1,0 +1,24 @@
+<svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Facebook Logo Circle -->
+    <circle cx="40" cy="40" r="18" fill="#1877F2"/>
+
+    <!-- Facebook "f" -->
+    <path d="M44.5 31.5h3.5V26h-4.2c-4.8 0-6.3 2.9-6.3 6.2v3.3H34v5.5h3.5V54h5.5V41h4.2l0.8-5.5h-5V33c0-1.4 0.4-1.5 1.5-1.5z" fill="white"/>
+
+    <!-- "Find us on" Text -->
+    <text x="70" y="32" font-family="Arial, sans-serif" font-size="11" fill="#1C1E21">Find us on</text>
+
+    <!-- "Facebook" Text -->
+    <text x="70" y="48" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1877F2">Facebook</text>
+
+    <!-- Star Rating -->
+    <g transform="translate(70, 52)">
+      <path d="M6 9l-3.5 1.8 0.7-3.9L0.3 4.1l3.9-0.6L6 0l1.8 3.6 3.9 0.6-2.8 2.7 0.7 3.9z" fill="#FBBC04" transform="scale(0.8)"/>
+      <path d="M6 9l-3.5 1.8 0.7-3.9L0.3 4.1l3.9-0.6L6 0l1.8 3.6 3.9 0.6-2.8 2.7 0.7 3.9z" fill="#FBBC04" transform="translate(10, 0) scale(0.8)"/>
+      <path d="M6 9l-3.5 1.8 0.7-3.9L0.3 4.1l3.9-0.6L6 0l1.8 3.6 3.9 0.6-2.8 2.7 0.7 3.9z" fill="#FBBC04" transform="translate(20, 0) scale(0.8)"/>
+      <path d="M6 9l-3.5 1.8 0.7-3.9L0.3 4.1l3.9-0.6L6 0l1.8 3.6 3.9 0.6-2.8 2.7 0.7 3.9z" fill="#FBBC04" transform="translate(30, 0) scale(0.8)"/>
+      <path d="M6 9l-3.5 1.8 0.7-3.9L0.3 4.1l3.9-0.6L6 0l1.8 3.6 3.9 0.6-2.8 2.7 0.7 3.9z" fill="#FBBC04" transform="translate(40, 0) scale(0.8)"/>
+    </g>
+  </g>
+</svg>

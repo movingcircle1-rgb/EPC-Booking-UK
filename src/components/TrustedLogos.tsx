@@ -94,7 +94,7 @@ export default function TrustedLogos() {
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex items-center justify-center h-28 w-56 bg-white rounded-lg border-2 border-gray-200 hover:border-[#C73532] hover:shadow-xl transition-all duration-300 p-6"
+                className="flex-shrink-0 flex items-center justify-center h-28 w-56 bg-white rounded-lg border-2 border-gray-200 hover:border-[#be0e0c] hover:shadow-xl transition-all duration-300 p-6"
               >
                 <img
                   src={logo.imageUrl}

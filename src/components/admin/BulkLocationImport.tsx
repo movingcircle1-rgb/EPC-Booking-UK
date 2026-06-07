@@ -164,7 +164,7 @@ Glasgow,Lanarkshire,Scotland`;
                 accept=".csv"
                 onChange={handleFileUpload}
                 disabled={loading}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -177,7 +177,7 @@ Glasgow,Lanarkshire,Scotland`;
                 onChange={(e) => setCsvData(e.target.value)}
                 disabled={loading}
                 rows={12}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent font-mono text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent font-mono text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                 placeholder="City,County,Region&#10;Manchester,Greater Manchester,North West England&#10;Liverpool,Merseyside,North West England"
               />
               <p className="text-xs text-gray-500 mt-1">
@@ -200,7 +200,7 @@ Glasgow,Lanarkshire,Scotland`;
               <button
                 onClick={handleImport}
                 disabled={loading || !csvData.trim()}
-                className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? (
                   <>
@@ -300,7 +300,7 @@ Glasgow,Lanarkshire,Scotland`;
             <div className="flex justify-end">
               <button
                 onClick={onClose}
-                className="px-6 py-3 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors font-semibold"
+                className="px-6 py-3 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors font-semibold"
               >
                 Close
               </button>

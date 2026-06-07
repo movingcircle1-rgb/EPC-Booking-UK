@@ -269,7 +269,7 @@ export default function LocationManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -295,7 +295,7 @@ export default function LocationManagement() {
           </button>
           <button
             onClick={() => setShowForm(true)}
-            className="flex items-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+            className="flex items-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
           >
             <Plus size={20} />
             Manual Add
@@ -318,7 +318,7 @@ export default function LocationManagement() {
           placeholder="Search locations..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
         />
       </div>
 
@@ -362,7 +362,7 @@ export default function LocationManagement() {
                       description: `Professional removal and storage services in ${name}`
                     });
                   }}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="e.g., Bristol"
                 />
               </div>
@@ -375,7 +375,7 @@ export default function LocationManagement() {
                   type="text"
                   value={formData.slug}
                   onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="Auto-generated from name"
                 />
               </div>
@@ -389,7 +389,7 @@ export default function LocationManagement() {
                     type="text"
                     value={formData.region}
                     onChange={(e) => setFormData({ ...formData, region: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                     placeholder="e.g., South West"
                   />
                 </div>
@@ -402,7 +402,7 @@ export default function LocationManagement() {
                     type="text"
                     value={formData.county}
                     onChange={(e) => setFormData({ ...formData, county: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                     placeholder="e.g., Bristol"
                   />
                 </div>
@@ -416,7 +416,7 @@ export default function LocationManagement() {
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   rows={3}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="Brief description of services in this location"
                 />
               </div>
@@ -432,7 +432,7 @@ export default function LocationManagement() {
                     ...formData,
                     areas_covered: e.target.value.split(',').map(s => s.trim()).filter(Boolean)
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="City Centre, North Area, South Area"
                 />
               </div>
@@ -445,7 +445,7 @@ export default function LocationManagement() {
                   type="url"
                   value={formData.map_embed_url}
                   onChange={(e) => setFormData({ ...formData, map_embed_url: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="https://www.google.com/maps/embed?pb=..."
                 />
                 <p className="text-xs text-gray-500 mt-1">
@@ -464,7 +464,7 @@ export default function LocationManagement() {
                   type="checkbox"
                   checked={formData.is_featured}
                   onChange={(e) => setFormData({ ...formData, is_featured: e.target.checked })}
-                  className="w-4 h-4 text-[#C73532] rounded focus:ring-[#C73532]"
+                  className="w-4 h-4 text-[#be0e0c] rounded focus:ring-[#be0e0c]"
                 />
                 <span className="text-sm text-gray-700">Feature this location on homepage</span>
               </label>
@@ -472,7 +472,7 @@ export default function LocationManagement() {
               <div className="flex gap-3 pt-4">
                 <button
                   onClick={handleSave}
-                  className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+                  className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
                 >
                   <Save size={20} />
                   Save Location
@@ -494,7 +494,7 @@ export default function LocationManagement() {
           <div key={city.id} className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-2">
-                <MapPin size={20} className="text-[#C73532]" />
+                <MapPin size={20} className="text-[#be0e0c]" />
                 <h3 className="text-lg font-bold text-gray-900">{city.name}</h3>
               </div>
               {city.is_featured && (
@@ -551,7 +551,7 @@ export default function LocationManagement() {
             <div className="flex gap-2">
               <button
                 onClick={() => handleEdit(city)}
-                className="flex-1 flex items-center justify-center gap-2 text-sm bg-[#C73532] hover:bg-[#A92C2A] text-white px-3 py-2 rounded-lg transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 text-sm bg-[#be0e0c] hover:bg-[#9f0b0a] text-white px-3 py-2 rounded-lg transition-colors"
               >
                 <Edit size={16} />
                 Edit

@@ -30,7 +30,7 @@ export default function TempAdminPage() {
   if (authLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -75,7 +75,7 @@ export default function TempAdminPage() {
                 onClick={() => setActiveTab(id as TabType)}
                 className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                   activeTab === id
-                    ? 'text-[#C73532] border-b-2 border-[#C73532]'
+                    ? 'text-[#be0e0c] border-b-2 border-[#be0e0c]'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >

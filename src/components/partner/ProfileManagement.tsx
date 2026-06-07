@@ -85,7 +85,7 @@ export default function ProfileManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -101,7 +101,7 @@ export default function ProfileManagement() {
           {!editing ? (
             <button
               onClick={() => setEditing(true)}
-              className="flex items-center gap-2 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors"
             >
               <Edit2 size={18} />
               Edit Profile
@@ -143,7 +143,7 @@ export default function ProfileManagement() {
                 type="text"
                 value={formData.company_name}
                 onChange={(e) => setFormData({ ...formData, company_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
               />
             ) : (
               <p className="text-lg text-gray-900 px-4 py-3 bg-gray-50 rounded-lg">{formData.company_name}</p>
@@ -160,7 +160,7 @@ export default function ProfileManagement() {
                 type="text"
                 value={formData.contact_name}
                 onChange={(e) => setFormData({ ...formData, contact_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
               />
             ) : (
               <p className="text-lg text-gray-900 px-4 py-3 bg-gray-50 rounded-lg">{formData.contact_name}</p>
@@ -177,7 +177,7 @@ export default function ProfileManagement() {
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
               />
             ) : (
               <p className="text-lg text-gray-900 px-4 py-3 bg-gray-50 rounded-lg">{formData.email}</p>
@@ -194,7 +194,7 @@ export default function ProfileManagement() {
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
               />
             ) : (
               <p className="text-lg text-gray-900 px-4 py-3 bg-gray-50 rounded-lg">{formData.phone}</p>
@@ -211,7 +211,7 @@ export default function ProfileManagement() {
                 rows={3}
                 value={formData.address}
                 onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
               />
             ) : (
               <p className="text-lg text-gray-900 px-4 py-3 bg-gray-50 rounded-lg">{formData.address || 'Not provided'}</p>
@@ -234,7 +234,7 @@ export default function ProfileManagement() {
                   type="text"
                   value={formData.bank_account_name}
                   onChange={(e) => setFormData({ ...formData, bank_account_name: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="Account holder name"
                 />
               ) : (
@@ -253,7 +253,7 @@ export default function ProfileManagement() {
                   type="text"
                   value={formData.bank_account_number}
                   onChange={(e) => setFormData({ ...formData, bank_account_number: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="12345678"
                   maxLength={8}
                 />
@@ -273,7 +273,7 @@ export default function ProfileManagement() {
                   type="text"
                   value={formData.bank_sort_code}
                   onChange={(e) => setFormData({ ...formData, bank_sort_code: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="12-34-56"
                   maxLength={8}
                 />

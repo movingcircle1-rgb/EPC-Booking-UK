@@ -249,12 +249,12 @@ export default function UserManagementAdmin2() {
             placeholder="Search users by name or email..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
           />
         </div>
         <button
           onClick={() => setShowCreateModal(true)}
-          className="flex items-center gap-2 bg-[#C73532] text-white px-6 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+          className="flex items-center gap-2 bg-[#be0e0c] text-white px-6 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
         >
           <Plus size={20} />
           Create New User
@@ -263,7 +263,7 @@ export default function UserManagementAdmin2() {
 
       {loading && !users.length ? (
         <div className="text-center py-12">
-          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
           <p className="mt-4 text-gray-600">Loading users...</p>
         </div>
       ) : (
@@ -383,7 +383,7 @@ export default function UserManagementAdmin2() {
                   type="email"
                   value={newUser.email}
                   onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="user@example.com"
                 />
               </div>
@@ -398,7 +398,7 @@ export default function UserManagementAdmin2() {
                     type={showPassword ? 'text' : 'password'}
                     value={newUser.password}
                     onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                     placeholder="Minimum 6 characters"
                   />
                   <button
@@ -419,7 +419,7 @@ export default function UserManagementAdmin2() {
                   type="text"
                   value={newUser.full_name}
                   onChange={(e) => setNewUser({ ...newUser, full_name: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="John Doe"
                 />
               </div>
@@ -433,7 +433,7 @@ export default function UserManagementAdmin2() {
                   type="tel"
                   value={newUser.phone}
                   onChange={(e) => setNewUser({ ...newUser, phone: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="07123456789"
                 />
               </div>
@@ -446,7 +446,7 @@ export default function UserManagementAdmin2() {
                 <select
                   value={newUser.role}
                   onChange={(e) => setNewUser({ ...newUser, role: e.target.value as any })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                 >
                   <option value="client">Client</option>
                   <option value="staff">Staff</option>
@@ -468,7 +468,7 @@ export default function UserManagementAdmin2() {
               <button
                 onClick={handleCreateUser}
                 disabled={loading}
-                className="flex-1 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-2 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 <Save size={20} />
                 Create User
@@ -503,7 +503,7 @@ export default function UserManagementAdmin2() {
                   type="text"
                   value={editingUser.full_name}
                   onChange={(e) => setEditingUser({ ...editingUser, full_name: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                 />
               </div>
 
@@ -516,7 +516,7 @@ export default function UserManagementAdmin2() {
                   type="tel"
                   value={editingUser.phone}
                   onChange={(e) => setEditingUser({ ...editingUser, phone: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                 />
               </div>
 
@@ -528,7 +528,7 @@ export default function UserManagementAdmin2() {
                 <select
                   value={editingUser.role}
                   onChange={(e) => setEditingUser({ ...editingUser, role: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                 >
                   <option value="client">Client</option>
                   <option value="staff">Staff</option>
@@ -550,7 +550,7 @@ export default function UserManagementAdmin2() {
               <button
                 onClick={handleUpdateUser}
                 disabled={loading}
-                className="flex-1 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-2 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 <Save size={20} />
                 Update User
@@ -589,7 +589,7 @@ export default function UserManagementAdmin2() {
                   type={showPassword ? 'text' : 'password'}
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                   placeholder="Enter new password"
                 />
                 <button
@@ -616,7 +616,7 @@ export default function UserManagementAdmin2() {
               <button
                 onClick={handleChangePassword}
                 disabled={loading}
-                className="flex-1 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-2 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 <Key size={20} />
                 Change Password

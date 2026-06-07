@@ -102,7 +102,7 @@ export default function JobAssignments() {
         <div className="bg-white rounded-xl shadow-lg">
           <div className="border-b border-gray-200 px-6 py-4">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              <Calendar size={24} className="text-[#C73532]" />
+              <Calendar size={24} className="text-[#be0e0c]" />
               Today's Jobs
             </h2>
             <p className="text-sm text-gray-600 mt-1">You have {todayJobs.length} job{todayJobs.length !== 1 ? 's' : ''} scheduled today</p>
@@ -112,7 +112,7 @@ export default function JobAssignments() {
             {todayJobs.map((job) => (
               <div
                 key={job.id}
-                className="border-2 border-[#C73532] bg-pink-50 rounded-lg p-6 hover:shadow-lg transition-all"
+                className="border-2 border-[#be0e0c] bg-pink-50 rounded-lg p-6 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <div className="flex-1">
@@ -188,7 +188,7 @@ export default function JobAssignments() {
                 {job.status === 'scheduled' && (
                   <button
                     onClick={() => handleStartJob(job.id)}
-                    className="w-full flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors"
+                    className="w-full flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9f0b0a] transition-colors"
                   >
                     <Play size={20} />
                     Start Job & Clock In

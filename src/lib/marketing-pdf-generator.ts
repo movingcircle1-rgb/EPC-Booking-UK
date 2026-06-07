@@ -192,7 +192,7 @@ const getContentByCategory = (category: string, title: string) => {
         {
           title: 'Brand Colors',
           items: [
-            'Primary Red: #C73532 (RGB: 231, 28, 94)',
+            'Primary Red: #be0e0c (RGB: 231, 28, 94)',
             'Dark Grey: #293132 (RGB: 41, 49, 50)',
             'Light Grey: #949494 (RGB: 148, 148, 148)',
             'White: #FFFFFF for backgrounds'
@@ -318,10 +318,10 @@ export const generateHTMLDownload = (material: any) => {
             max-width: 600px;
             background: white;
             padding: 20px;
-            border-left: 4px solid #C73532;
+            border-left: 4px solid #be0e0c;
         }
         .logo {
-            color: #C73532;
+            color: #be0e0c;
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -343,7 +343,7 @@ export const generateHTMLDownload = (material: any) => {
             line-height: 1.6;
         }
         .contact a {
-            color: #C73532;
+            color: #be0e0c;
             text-decoration: none;
         }
         .contact a:hover {

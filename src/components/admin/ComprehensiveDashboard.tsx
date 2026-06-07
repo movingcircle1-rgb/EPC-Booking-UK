@@ -94,7 +94,7 @@ export default function ComprehensiveDashboard() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -180,14 +180,14 @@ export default function ComprehensiveDashboard() {
           <p className="text-sm text-gray-500">Awaiting Processing</p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#C73532]">
+        <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#be0e0c]">
           <div className="flex items-center justify-between mb-4">
             <div>
               <p className="text-gray-600 text-sm font-semibold">Active Jobs</p>
               <p className="text-3xl font-bold text-gray-900 mt-1">{stats.overall.activeJobs}</p>
             </div>
-            <div className="w-12 h-12 bg-[#C73532] bg-opacity-10 rounded-full flex items-center justify-center">
-              <TrendingUp size={24} className="text-[#C73532]" />
+            <div className="w-12 h-12 bg-[#be0e0c] bg-opacity-10 rounded-full flex items-center justify-center">
+              <TrendingUp size={24} className="text-[#be0e0c]" />
             </div>
           </div>
           <p className="text-sm text-gray-500">In Progress</p>
@@ -200,26 +200,26 @@ export default function ComprehensiveDashboard() {
           Quick Actions
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left">
-            <Users size={20} className="text-[#C73532] mb-2" />
+          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#be0e0c] hover:shadow-md transition-all text-left">
+            <Users size={20} className="text-[#be0e0c] mb-2" />
             <p className="font-semibold text-gray-900">Manage Users</p>
             <p className="text-xs text-gray-600 mt-1">View all users and roles</p>
           </button>
 
-          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left">
-            <Calendar size={20} className="text-[#C73532] mb-2" />
+          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#be0e0c] hover:shadow-md transition-all text-left">
+            <Calendar size={20} className="text-[#be0e0c] mb-2" />
             <p className="font-semibold text-gray-900">View Bookings</p>
             <p className="text-xs text-gray-600 mt-1">Manage all bookings</p>
           </button>
 
-          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left">
-            <FileText size={20} className="text-[#C73532] mb-2" />
+          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#be0e0c] hover:shadow-md transition-all text-left">
+            <FileText size={20} className="text-[#be0e0c] mb-2" />
             <p className="font-semibold text-gray-900">Reports</p>
             <p className="text-xs text-gray-600 mt-1">Generate reports</p>
           </button>
 
-          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#C73532] hover:shadow-md transition-all text-left">
-            <AlertCircle size={20} className="text-[#C73532] mb-2" />
+          <button className="p-4 border-2 border-gray-200 rounded-lg hover:border-[#be0e0c] hover:shadow-md transition-all text-left">
+            <AlertCircle size={20} className="text-[#be0e0c] mb-2" />
             <p className="font-semibold text-gray-900">Alerts</p>
             <p className="text-xs text-gray-600 mt-1">View system alerts</p>
           </button>

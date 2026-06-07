@@ -65,7 +65,7 @@ export default function UserMenu() {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 bg-[#C73532] hover:bg-[#A92C2A] text-white rounded-lg transition-all"
+        className="flex items-center gap-2 px-4 py-2 bg-[#be0e0c] hover:bg-[#9f0b0a] text-white rounded-lg transition-all"
       >
         <User size={20} />
         <span className="hidden sm:inline font-semibold">
@@ -81,7 +81,7 @@ export default function UserMenu() {
             </p>
             <p className="text-xs text-gray-600 truncate">{user?.email}</p>
             {userRole?.role && (
-              <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 bg-[#C73532]/10 rounded text-xs font-semibold text-[#C73532] uppercase">
+              <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 bg-[#be0e0c]/10 rounded text-xs font-semibold text-[#be0e0c] uppercase">
                 <Shield size={12} />
                 {userRole.role}
               </div>

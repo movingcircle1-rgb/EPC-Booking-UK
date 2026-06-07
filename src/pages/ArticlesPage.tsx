@@ -108,7 +108,7 @@ export default function ArticlesPage() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 selectedCategory === category
-                  ? 'bg-[#C73532] text-white shadow-lg'
+                  ? 'bg-[#be0e0c] text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
               }`}
             >
@@ -119,7 +119,7 @@ export default function ArticlesPage() {
 
         {loading ? (
           <div className="min-h-[300px] flex items-center justify-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
           </div>
         ) : filteredArticles.length === 0 ? (
           <div className="text-center py-16">
@@ -143,7 +143,7 @@ export default function ArticlesPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 right-4">
-                      <span className="px-3 py-1 bg-[#C73532] text-white text-sm font-medium rounded-full">
+                      <span className="px-3 py-1 bg-[#be0e0c] text-white text-sm font-medium rounded-full">
                         {article.category}
                       </span>
                     </div>
@@ -151,7 +151,7 @@ export default function ArticlesPage() {
                 )}
 
                 <div className="p-6">
-                  <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#C73532] transition-colors line-clamp-2">
+                  <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#be0e0c] transition-colors line-clamp-2">
                     {article.title}
                   </h2>
 
@@ -184,7 +184,7 @@ export default function ArticlesPage() {
                     </div>
                   )}
 
-                  <div className="flex items-center text-[#C73532] font-medium">
+                  <div className="flex items-center text-[#be0e0c] font-medium">
                     Read More
                     <ArrowRight size={18} className="ml-2" />
                   </div>

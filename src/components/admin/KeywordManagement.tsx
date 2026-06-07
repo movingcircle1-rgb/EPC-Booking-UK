@@ -148,7 +148,7 @@ export default function KeywordManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -160,7 +160,7 @@ export default function KeywordManagement() {
           <h2 className="text-2xl font-bold text-gray-900">Keyword Management</h2>
           <button
             onClick={() => setShowForm(true)}
-            className="flex items-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+            className="flex items-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
           >
             <Plus size={20} />
             Add Keyword
@@ -189,7 +189,7 @@ export default function KeywordManagement() {
           placeholder="Search keywords..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
         />
       </div>
 
@@ -234,7 +234,7 @@ export default function KeywordManagement() {
                   type="text"
                   value={formData.keyword_text}
                   onChange={(e) => setFormData({ ...formData, keyword_text: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   placeholder="e.g., house removals"
                   required
                 />
@@ -249,7 +249,7 @@ export default function KeywordManagement() {
                   type="text"
                   value={formData.target_url}
                   onChange={(e) => setFormData({ ...formData, target_url: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   placeholder="e.g., /house-removals"
                   required
                 />
@@ -264,7 +264,7 @@ export default function KeywordManagement() {
                   <select
                     value={formData.link_frequency}
                     onChange={(e) => setFormData({ ...formData, link_frequency: e.target.value as 'first' | 'all' | 'limited' })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   >
                     <option value="first">First occurrence per page</option>
                     <option value="all">All occurrences per page</option>
@@ -285,7 +285,7 @@ export default function KeywordManagement() {
                     max="10"
                     value={formData.max_links_per_page}
                     onChange={(e) => setFormData({ ...formData, max_links_per_page: parseInt(e.target.value) || 1 })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   />
                   <p className="mt-1 text-xs text-gray-500">
                     Maximum links on each page (applies to "limited" frequency)
@@ -301,7 +301,7 @@ export default function KeywordManagement() {
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   >
                     <option value="services">Services</option>
                     <option value="company">Company</option>
@@ -321,7 +321,7 @@ export default function KeywordManagement() {
                     max="200"
                     value={formData.priority}
                     onChange={(e) => setFormData({ ...formData, priority: parseInt(e.target.value) || 80 })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   />
                   <p className="mt-1 text-xs text-gray-500">
                     Higher priority keywords are processed first (0-200)
@@ -344,7 +344,7 @@ export default function KeywordManagement() {
                       onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
                       className="sr-only peer"
                     />
-                    <div className="w-14 h-7 bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-pink-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-[#C73532]"></div>
+                    <div className="w-14 h-7 bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-pink-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-[#be0e0c]"></div>
                     <span className="ml-3 text-sm font-medium text-gray-900">
                       {formData.is_active ? 'On' : 'Off'}
                     </span>
@@ -356,7 +356,7 @@ export default function KeywordManagement() {
                 <button
                   onClick={handleSave}
                   disabled={saving}
-                  className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {saving ? (
                     <>
@@ -445,7 +445,7 @@ export default function KeywordManagement() {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleEdit(keyword)}
-                        className="text-[#C73532] hover:text-[#A92C2A]"
+                        className="text-[#be0e0c] hover:text-[#9f0b0a]"
                       >
                         <Edit size={18} />
                       </button>

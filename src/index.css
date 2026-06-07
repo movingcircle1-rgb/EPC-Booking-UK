@@ -35,7 +35,7 @@
     position: absolute;
     top: -100px;
     left: 0;
-    background: #C73532;
+    background: #be0e0c;
     color: white;
     padding: 8px 16px;
     text-decoration: none;
@@ -70,7 +70,7 @@
 
 @layer base {
   *:focus-visible {
-    outline: 3px solid #C73532;
+    outline: 3px solid #be0e0c;
     outline-offset: 2px;
   }
 
@@ -79,7 +79,7 @@
   input:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
-    outline: 3px solid #C73532;
+    outline: 3px solid #be0e0c;
     outline-offset: 2px;
   }
 }
@@ -114,7 +114,7 @@
   }
 
   .article-content a {
-    @apply text-[#C73532] hover:text-[#A92C2A] underline transition-colors;
+    @apply text-[#be0e0c] hover:text-[#9f0b0a] underline transition-colors;
   }
 
   .article-content ul {
@@ -130,7 +130,7 @@
   }
 
   .article-content blockquote {
-    @apply border-l-4 border-[#C73532] pl-4 py-2 my-6 italic text-gray-700 bg-gray-50 rounded-r;
+    @apply border-l-4 border-[#be0e0c] pl-4 py-2 my-6 italic text-gray-700 bg-gray-50 rounded-r;
   }
 
   .article-content code {

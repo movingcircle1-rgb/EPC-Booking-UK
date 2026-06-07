@@ -113,7 +113,7 @@ export default function QuickAddLocation({ onClose, onSuccess }: QuickAddLocatio
               value={cityName}
               onChange={(e) => setCityName(e.target.value)}
               disabled={loading || success}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               placeholder="e.g., Manchester"
               required
             />
@@ -132,7 +132,7 @@ export default function QuickAddLocation({ onClose, onSuccess }: QuickAddLocatio
                 value={county}
                 onChange={(e) => setCounty(e.target.value)}
                 disabled={loading || success}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
                 placeholder="e.g., Greater Manchester"
               />
             </div>
@@ -146,7 +146,7 @@ export default function QuickAddLocation({ onClose, onSuccess }: QuickAddLocatio
                 value={region}
                 onChange={(e) => setRegion(e.target.value)}
                 disabled={loading || success}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
                 placeholder="e.g., North West England"
               />
             </div>
@@ -220,7 +220,7 @@ export default function QuickAddLocation({ onClose, onSuccess }: QuickAddLocatio
             <button
               type="submit"
               disabled={loading || success || !cityName.trim()}
-              className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>

@@ -38,13 +38,13 @@ export const brandConfig = {
 
   theme: {
     primary: '#1F3447',
-    primaryHover: '#172838',
-    primaryDark: '#122130',
+    primaryHover: '#1F3447',
+    primaryDark: '#1F3447',
     secondary: '#2F4E63',
     bg1: '#F4F6F7',
     bg2: '#E8EEF1',
     text: '#17212B',
-    accent: '#C73532',
+    accent: '#be0e0c',
   },
 
   seo: {

@@ -334,7 +334,7 @@ function RichTextBlock({ block }: { block: CityContentBlock }) {
               <a
                 key={`${link.url}-${link.label}`}
                 href={link.url}
-                className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#C73532] hover:text-[#C73532] transition-colors"
+                className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#be0e0c] hover:text-[#be0e0c] transition-colors"
               >
                 {link.label}
               </a>
@@ -424,7 +424,7 @@ function ServiceBlockRenderer({ block }: { block: CityContentBlock }) {
                 <a
                   key={`${link.url}-${link.label}`}
                   href={link.url}
-                  className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#C73532] hover:text-[#C73532] transition-colors"
+                  className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#be0e0c] hover:text-[#be0e0c] transition-colors"
                 >
                   {link.label}
                 </a>
@@ -457,7 +457,7 @@ function QuoteCta(args: {
           {SITE_PHONE ? (
             <a
               href={`tel:${SITE_PHONE.replace(/\s+/g, '')}`}
-              className="px-5 py-3 rounded-xl bg-[#C73532] hover:bg-[#A92C2A] transition-colors font-semibold"
+              className="px-5 py-3 rounded-xl bg-[#be0e0c] hover:bg-[#9f0b0a] transition-colors font-semibold"
             >
               Call {SITE_PHONE}
             </a>
@@ -692,7 +692,7 @@ export default function LocationPage(props: LocationPageProps) {
                     className={[
                       'px-4 py-2 rounded-full text-sm font-semibold transition-colors border',
                       active
-                        ? 'bg-[#C73532] border-[#C73532] text-white'
+                        ? 'bg-[#be0e0c] border-[#be0e0c] text-white'
                         : 'bg-white/5 border-white/20 text-white hover:bg-white/10'
                     ].join(' ')}
                   >
@@ -786,7 +786,7 @@ export default function LocationPage(props: LocationPageProps) {
                           </p>
                           <a
                             href={`/locations/${locationSlug}/${service.slug}/`}
-                            className="inline-flex mt-4 text-[#C73532] font-semibold hover:text-[#A92C2A] transition-colors"
+                            className="inline-flex mt-4 text-[#be0e0c] font-semibold hover:text-[#9f0b0a] transition-colors"
                           >
                             View {service.title}
                           </a>
@@ -904,7 +904,7 @@ export default function LocationPage(props: LocationPageProps) {
                     <div className="mt-6 flex flex-wrap gap-3">
                       <a
                         href={`/locations/${locationSlug}/`}
-                        className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#C73532] hover:text-[#C73532] transition-colors"
+                        className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#be0e0c] hover:text-[#be0e0c] transition-colors"
                       >
                         {locationName} location page
                       </a>
@@ -914,7 +914,7 @@ export default function LocationPage(props: LocationPageProps) {
                           <a
                             key={s.slug}
                             href={`/locations/${locationSlug}/${s.slug}/`}
-                            className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#C73532] hover:text-[#C73532] transition-colors"
+                            className="px-4 py-2 rounded-full border border-gray-200 text-gray-800 hover:border-[#be0e0c] hover:text-[#be0e0c] transition-colors"
                           >
                             {s.title} in {locationName}
                           </a>

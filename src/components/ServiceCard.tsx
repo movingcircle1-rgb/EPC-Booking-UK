@@ -21,8 +21,8 @@ export default function ServiceCard({
   imageUrl
 }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border-2 border-gray-100 hover:border-[#C73532]/30">
-      <div className="bg-gradient-to-br from-[#C73532] via-[#d4194e] to-[#A92C2A] p-10 relative overflow-hidden">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border-2 border-gray-100 hover:border-[#be0e0c]/30">
+      <div className="bg-gradient-to-br from-[#be0e0c] via-[#d4194e] to-[#9f0b0a] p-10 relative overflow-hidden">
         {imageUrl && (
           <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-300">
             <img src={imageUrl} alt={title} className="w-full h-full object-cover" />
@@ -32,7 +32,7 @@ export default function ServiceCard({
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
         <div className="relative z-10">
           <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <Icon size={36} className="text-[#C73532]" />
+            <Icon size={36} className="text-[#be0e0c]" />
           </div>
           <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
           <p className="text-white/95 leading-relaxed">{description}</p>
@@ -43,7 +43,7 @@ export default function ServiceCard({
         <ul className="space-y-4 mb-8">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
-              <span className="w-2 h-2 rounded-full bg-gradient-to-br from-[#C73532] to-[#A92C2A] mt-2 flex-shrink-0 shadow-sm"></span>
+              <span className="w-2 h-2 rounded-full bg-gradient-to-br from-[#be0e0c] to-[#9f0b0a] mt-2 flex-shrink-0 shadow-sm"></span>
               <span className="text-gray-700 leading-relaxed">{feature}</span>
             </li>
           ))}
@@ -52,7 +52,7 @@ export default function ServiceCard({
         {link ? (
           <SafeLink
             to={link}
-            className="w-full bg-gradient-to-r from-gray-100 to-gray-50 hover:from-[#C73532] hover:to-[#A92C2A] text-gray-700 hover:text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 border-2 border-gray-200 hover:border-transparent shadow-sm hover:shadow-lg"
+            className="w-full bg-gradient-to-r from-gray-100 to-gray-50 hover:from-[#be0e0c] hover:to-[#9f0b0a] text-gray-700 hover:text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 border-2 border-gray-200 hover:border-transparent shadow-sm hover:shadow-lg"
             aria-label={`Learn more about ${title}`}
           >
             Learn More
@@ -61,7 +61,7 @@ export default function ServiceCard({
         ) : (
           <button
             onClick={onLearnMore}
-            className="w-full bg-gradient-to-r from-gray-100 to-gray-50 hover:from-[#C73532] hover:to-[#A92C2A] text-gray-700 hover:text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 border-2 border-gray-200 hover:border-transparent shadow-sm hover:shadow-lg"
+            className="w-full bg-gradient-to-r from-gray-100 to-gray-50 hover:from-[#be0e0c] hover:to-[#9f0b0a] text-gray-700 hover:text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 border-2 border-gray-200 hover:border-transparent shadow-sm hover:shadow-lg"
             aria-label={`Learn more about ${title}`}
           >
             Learn More

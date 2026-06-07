@@ -335,7 +335,7 @@ export default function QuotesManagement() {
             onClick={() => setStatusFilter(stat.status)}
             className={`p-4 rounded-lg border-2 transition-all ${
               statusFilter === stat.status
-                ? 'border-[#C73532] bg-[#C73532]/5'
+                ? 'border-[#be0e0c] bg-[#be0e0c]/5'
                 : 'border-gray-200 hover:border-gray-300'
             }`}
           >
@@ -355,7 +355,7 @@ export default function QuotesManagement() {
                 placeholder="Search by name, email, or reference number..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C73532]/20 focus:border-[#C73532]"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#be0e0c]/20 focus:border-[#be0e0c]"
               />
             </div>
           </div>
@@ -434,7 +434,7 @@ export default function QuotesManagement() {
                             setSelectedRequest(request);
                             setShowDetailModal(true);
                           }}
-                          className="p-2 text-gray-600 hover:text-[#C73532] hover:bg-gray-100 rounded-lg transition-colors"
+                          className="p-2 text-gray-600 hover:text-[#be0e0c] hover:bg-gray-100 rounded-lg transition-colors"
                           title="View Details"
                         >
                           <Eye size={18} />
@@ -489,8 +489,8 @@ export default function QuotesManagement() {
                   <h3 className="text-sm font-semibold text-gray-600 mb-3">Customer Information</h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-[#C73532]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <FileText size={16} className="text-[#C73532]" />
+                      <div className="w-8 h-8 bg-[#be0e0c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <FileText size={16} className="text-[#be0e0c]" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-500">Name</p>
@@ -498,8 +498,8 @@ export default function QuotesManagement() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-[#C73532]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Mail size={16} className="text-[#C73532]" />
+                      <div className="w-8 h-8 bg-[#be0e0c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Mail size={16} className="text-[#be0e0c]" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-500">Email</p>
@@ -507,8 +507,8 @@ export default function QuotesManagement() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-[#C73532]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Phone size={16} className="text-[#C73532]" />
+                      <div className="w-8 h-8 bg-[#be0e0c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Phone size={16} className="text-[#be0e0c]" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-500">Phone</p>

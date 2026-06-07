@@ -183,7 +183,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-[#C73532]/90 backdrop-blur-md text-white py-2 px-2 sm:px-4 relative z-50">
+      <div className="bg-[#be0e0c]/90 backdrop-blur-md text-white py-2 px-2 sm:px-4 relative z-50">
         <div className="container mx-auto flex justify-between items-center text-xs sm:text-sm">
           <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
             {phoneNumbers.length > 0 ? (
@@ -210,7 +210,7 @@ export default function Navbar() {
                         key={index}
                         href={phone.href}
                         onClick={() => setShowPhoneDropdown(false)}
-                        className="block w-full text-left px-4 py-2 text-sm text-[#293132] hover:text-[#C73532] hover:bg-gray-50 transition-colors"
+                        className="block w-full text-left px-4 py-2 text-sm text-[#293132] hover:text-[#be0e0c] hover:bg-gray-50 transition-colors"
                       >
                         <div className="font-semibold">{phone.label}</div>
                         <div className="text-xs text-gray-600">{phone.number}</div>
@@ -271,8 +271,8 @@ export default function Navbar() {
                         onClick={() => setShowPortalsDropdown(false)}
                         className={`block w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
                           item.isSpecial
-                            ? 'text-[#C73532] font-semibold border-b border-gray-200 hover:text-[#A92C2A]'
-                            : 'text-[#293132] hover:text-[#C73532]'
+                            ? 'text-[#be0e0c] font-semibold border-b border-gray-200 hover:text-[#9f0b0a]'
+                            : 'text-[#293132] hover:text-[#be0e0c]'
                         }`}
                       >
                         {item.label}
@@ -313,7 +313,7 @@ export default function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#C73532] transition-colors"
+                  className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#be0e0c] transition-colors"
                   aria-label="Services menu"
                   aria-expanded={activeDropdown === 'services'}
                   type="button"
@@ -342,8 +342,8 @@ export default function Navbar() {
                               onFocus={() => setActiveServiceParentSlug(item.slug)}
                               className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold transition-colors ${
                                 isActive
-                                  ? 'bg-gray-50 text-[#C73532]'
-                                  : 'text-[#293132] hover:bg-gray-50 hover:text-[#C73532]'
+                                  ? 'bg-gray-50 text-[#be0e0c]'
+                                  : 'text-[#293132] hover:bg-gray-50 hover:text-[#be0e0c]'
                               }`}
                             >
                               <span>{getServiceLabel(item)}</span>
@@ -357,7 +357,7 @@ export default function Navbar() {
                             key={item.slug}
                             href={path}
                             onClick={() => setActiveDropdown(null)}
-                            className="block w-full text-left px-4 py-3 text-sm font-semibold text-[#293132] hover:text-[#C73532] hover:bg-gray-50 transition-colors"
+                            className="block w-full text-left px-4 py-3 text-sm font-semibold text-[#293132] hover:text-[#be0e0c] hover:bg-gray-50 transition-colors"
                           >
                             {getServiceLabel(item)}
                           </a>
@@ -376,7 +376,7 @@ export default function Navbar() {
                             key={child.slug}
                             href={toServicePath(child)}
                             onClick={() => setActiveDropdown(null)}
-                            className="block w-full text-left px-4 py-3 text-sm text-[#293132] hover:text-[#C73532] hover:bg-gray-50 transition-colors"
+                            className="block w-full text-left px-4 py-3 text-sm text-[#293132] hover:text-[#be0e0c] hover:bg-gray-50 transition-colors"
                           >
                             {getServiceLabel(child)}
                           </a>
@@ -402,7 +402,7 @@ export default function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#C73532] transition-colors"
+                  className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#be0e0c] transition-colors"
                   aria-label="Locations menu"
                   aria-expanded={activeDropdown === 'locations'}
                   type="button"
@@ -423,7 +423,7 @@ export default function Navbar() {
                           setActiveDropdown(null)
                           setActiveLocationRegion(null)
                         }}
-                        className="block w-full text-left px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#C73532] hover:bg-gray-50 transition-colors"
+                        className="block w-full text-left px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#be0e0c] hover:bg-gray-50 transition-colors"
                       >
                         View all locations
                       </a>
@@ -438,8 +438,8 @@ export default function Navbar() {
                           onFocus={() => setActiveLocationRegion(group.region)}
                           className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold transition-colors ${
                             activeLocationRegion === group.region
-                              ? 'bg-gray-50 text-[#C73532]'
-                              : 'text-[#293132] hover:bg-gray-50 hover:text-[#C73532]'
+                              ? 'bg-gray-50 text-[#be0e0c]'
+                              : 'text-[#293132] hover:bg-gray-50 hover:text-[#be0e0c]'
                           }`}
                         >
                           <span>{group.region}</span>
@@ -460,7 +460,7 @@ export default function Navbar() {
                                 setActiveDropdown(null)
                                 setActiveLocationRegion(null)
                               }}
-                              className="block w-full text-left px-4 py-2 text-sm text-[#293132] hover:text-[#C73532] hover:bg-gray-50 transition-colors"
+                              className="block w-full text-left px-4 py-2 text-sm text-[#293132] hover:text-[#be0e0c] hover:bg-gray-50 transition-colors"
                             >
                               {loc.label}
                             </a>
@@ -473,7 +473,7 @@ export default function Navbar() {
 
               <a
                 href="/articles/"
-                className="px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#C73532] transition-colors"
+                className="px-4 py-2 text-sm font-semibold text-[#293132] hover:text-[#be0e0c] transition-colors"
               >
                 Articles
               </a>
@@ -481,7 +481,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-[#293132] hover:text-[#C73532] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              className="lg:hidden p-2 text-[#293132] hover:text-[#be0e0c] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Toggle mobile menu"
               aria-expanded={isMobileMenuOpen}
               type="button"
@@ -623,7 +623,7 @@ export default function Navbar() {
                     href={toSeoPath(item.id)}
                     onClick={closeMobile}
                     className={`block w-full text-left px-6 py-2 text-sm hover:bg-gray-100 rounded-lg transition-colors min-h-[44px] flex items-center ${
-                      item.isSpecial ? 'text-[#C73532] font-semibold' : 'text-[#293132]'
+                      item.isSpecial ? 'text-[#be0e0c] font-semibold' : 'text-[#293132]'
                     }`}
                   >
                     {item.label}

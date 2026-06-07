@@ -68,7 +68,7 @@ export default function NearestOfficePage() {
               <div className="text-center">
                 <a
                   href="/locations/"
-                  className="inline-flex items-center justify-center rounded-lg bg-[#C73532] px-6 py-3 text-white font-semibold hover:bg-[#A92C2A] transition-colors"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#be0e0c] px-6 py-3 text-white font-semibold hover:bg-[#9f0b0a] transition-colors"
                 >
                   View All Locations
                 </a>
@@ -202,7 +202,7 @@ export default function NearestOfficePage() {
 
           <a
             href="/locations/"
-            className="inline-flex items-center justify-center rounded-lg bg-[#C73532] px-8 py-4 text-white font-semibold hover:bg-[#A92C2A] transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-[#be0e0c] px-8 py-4 text-white font-semibold hover:bg-[#9f0b0a] transition-colors"
           >
             Browse Locations
           </a>

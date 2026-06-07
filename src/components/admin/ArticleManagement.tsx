@@ -269,7 +269,7 @@ export default function ArticleManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -283,7 +283,7 @@ export default function ArticleManagement() {
         </div>
         <button
           onClick={() => setShowForm(true)}
-          className="flex items-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+          className="flex items-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
         >
           <Plus size={20} />
           New Article
@@ -298,25 +298,25 @@ export default function ArticleManagement() {
             placeholder="Search articles..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
           />
         </div>
         <div className="flex gap-2">
           <button
             onClick={() => setFilterStatus('all')}
-            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'all' ? 'bg-[#C73532] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'all' ? 'bg-[#be0e0c] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
           >
             All
           </button>
           <button
             onClick={() => setFilterStatus('draft')}
-            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'draft' ? 'bg-[#C73532] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'draft' ? 'bg-[#be0e0c] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
           >
             Drafts
           </button>
           <button
             onClick={() => setFilterStatus('published')}
-            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'published' ? 'bg-[#C73532] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+            className={`px-4 py-2 rounded-lg transition-colors ${filterStatus === 'published' ? 'bg-[#be0e0c] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
           >
             Published
           </button>
@@ -370,7 +370,7 @@ export default function ArticleManagement() {
                         setFormData(prev => ({ ...prev, slug: generateSlug(e.target.value) }));
                       }
                     }}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                     placeholder="Enter article title"
                     required
                   />
@@ -384,7 +384,7 @@ export default function ArticleManagement() {
                     type="text"
                     value={formData.slug}
                     onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                     placeholder="auto-generated-from-title"
                   />
                 </div>
@@ -396,7 +396,7 @@ export default function ArticleManagement() {
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   >
                     {categories.map(cat => (
                       <option key={cat} value={cat}>{cat}</option>
@@ -412,7 +412,7 @@ export default function ArticleManagement() {
                     value={formData.excerpt}
                     onChange={(e) => setFormData({ ...formData, excerpt: e.target.value })}
                     rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
                     placeholder="Brief summary of the article (150-200 characters)"
                     maxLength={300}
                   />
@@ -458,10 +458,10 @@ export default function ArticleManagement() {
 
                   <div className="flex gap-3">
                     <label className="flex-1 cursor-pointer">
-                      <div className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#C73532] hover:bg-gray-50 transition-colors">
+                      <div className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#be0e0c] hover:bg-gray-50 transition-colors">
                         {uploadingImage ? (
                           <>
-                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#C73532]"></div>
+                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#be0e0c]"></div>
                             <span className="text-sm text-gray-600">Uploading...</span>
                           </>
                         ) : (
@@ -497,7 +497,7 @@ export default function ArticleManagement() {
                       value={tagInput}
                       onChange={(e) => setTagInput(e.target.value)}
                       onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addTag())}
-                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                       placeholder="Add tag and press Enter"
                     />
                     <button
@@ -535,7 +535,7 @@ export default function ArticleManagement() {
                   <select
                     value={formData.status}
                     onChange={(e) => setFormData({ ...formData, status: e.target.value as 'draft' | 'published' | 'archived' })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent text-base"
                   >
                     <option value="draft">Draft</option>
                     <option value="published">Published</option>
@@ -554,7 +554,7 @@ export default function ArticleManagement() {
                 <button
                   onClick={handleSave}
                   disabled={saving}
-                  className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {saving ? (
                     <>
@@ -654,7 +654,7 @@ export default function ArticleManagement() {
                   )}
                   <button
                     onClick={() => handleEdit(article)}
-                    className="p-2 text-[#C73532] hover:bg-[#C73532] hover:text-white rounded-lg transition-colors"
+                    className="p-2 text-[#be0e0c] hover:bg-[#be0e0c] hover:text-white rounded-lg transition-colors"
                     title="Edit"
                   >
                     <Edit size={18} />
@@ -680,7 +680,7 @@ export default function ArticleManagement() {
           <p className="text-gray-500 text-sm mt-1">Create your first article to get started</p>
           <button
             onClick={() => setShowForm(true)}
-            className="mt-4 inline-flex items-center gap-2 bg-[#C73532] text-white px-4 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+            className="mt-4 inline-flex items-center gap-2 bg-[#be0e0c] text-white px-4 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
           >
             <Plus size={20} />
             Create Article

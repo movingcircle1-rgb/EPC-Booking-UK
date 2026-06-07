@@ -160,7 +160,7 @@ export default function LoginPage() {
         <div className="max-w-md w-full">
           <div className="bg-white rounded-2xl shadow-2xl p-8">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#C73532] rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#be0e0c] rounded-full mb-4">
                 <LogIn size={32} className="text-white" />
               </div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
@@ -197,7 +197,7 @@ export default function LoginPage() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-[#C73532] transition-all"
+                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-[#be0e0c] transition-all"
                       placeholder="you@example.com"
                     />
                   </div>
@@ -206,7 +206,7 @@ export default function LoginPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#C73532] hover:bg-[#A92C2A] text-white py-3 px-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-[#be0e0c] hover:bg-[#9f0b0a] text-white py-3 px-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {loading ? 'Sending...' : 'Send Reset Link'}
                 </button>
@@ -239,7 +239,7 @@ export default function LoginPage() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-[#C73532] transition-all"
+                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-[#be0e0c] transition-all"
                       placeholder="you@example.com"
                     />
                   </div>
@@ -259,7 +259,7 @@ export default function LoginPage() {
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-[#C73532] transition-all"
+                      className="block w-full pl-10 pr-3 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-[#be0e0c] transition-all"
                       placeholder="••••••••"
                     />
                   </div>
@@ -268,7 +268,7 @@ export default function LoginPage() {
              <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#C73532] hover:bg-[#A92C2A] text-white py-3 px-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-[#be0e0c] hover:bg-[#9f0b0a] text-white py-3 px-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {loading ? (
                     <span className="flex items-center justify-center gap-2">
@@ -284,7 +284,7 @@ export default function LoginPage() {
                   <button
                     type="button"
                     onClick={() => setShowResetPassword(true)}
-                    className="text-sm text-[#C73532] hover:text-[#A92C2A] font-semibold"
+                    className="text-sm text-[#be0e0c] hover:text-[#9f0b0a] font-semibold"
                   >
                     Forgot your password?
                   </button>
@@ -297,14 +297,14 @@ export default function LoginPage() {
                 Don&apos;t have an account?{' '}
                 <a
                   href="/signup/"
-                  className="text-[#C73532] hover:text-[#A92C2A] font-semibold transition-colors"
+                  className="text-[#be0e0c] hover:text-[#9f0b0a] font-semibold transition-colors"
                 >
                   Sign Up
                 </a>
               </p>
               <a
                 href="/"
-                className="text-[#C73532] hover:text-[#A92C2A] font-semibold transition-colors text-sm"
+                className="text-[#be0e0c] hover:text-[#9f0b0a] font-semibold transition-colors text-sm"
               >
                 Back to Homepage
               </a>

@@ -54,7 +54,7 @@ export default function SitemapPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#C73532] mx-auto"></div>
+          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#be0e0c] mx-auto"></div>
           <p className="mt-4 text-gray-600">Generating sitemap...</p>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function SitemapPage() {
             <h1 className="text-3xl font-bold text-[#293132]">Sitemap Generated</h1>
             <button
               onClick={generateSitemap}
-              className="bg-[#C73532] text-white px-6 py-2 rounded-lg hover:bg-[#A92C2A] transition-colors"
+              className="bg-[#be0e0c] text-white px-6 py-2 rounded-lg hover:bg-[#9f0b0a] transition-colors"
             >
               Regenerate
             </button>

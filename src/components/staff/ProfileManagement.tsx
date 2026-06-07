@@ -135,7 +135,7 @@ export default function ProfileManagement() {
         {!editing && (
           <button
             onClick={() => setEditing(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-[#C73532] text-white rounded-lg hover:bg-[#A92C2A] transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-[#be0e0c] text-white rounded-lg hover:bg-[#9f0b0a] transition-colors"
           >
             <Edit2 size={16} />
             Edit Profile
@@ -147,7 +147,7 @@ export default function ProfileManagement() {
         {/* Personal Information */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <User size={20} className="text-[#C73532]" />
+            <User size={20} className="text-[#be0e0c]" />
             Personal Information
           </h3>
           <div className="grid md:grid-cols-2 gap-4">
@@ -161,7 +161,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.full_name}
                 onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -176,7 +176,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -191,7 +191,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -205,7 +205,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.address}
                 onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
           </div>
@@ -214,7 +214,7 @@ export default function ProfileManagement() {
         {/* Work Information */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <Calendar size={20} className="text-[#C73532]" />
+            <Calendar size={20} className="text-[#be0e0c]" />
             Work Information
           </h3>
           <div className="grid md:grid-cols-2 gap-4">
@@ -227,7 +227,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.job_role}
                 onChange={(e) => setFormData({ ...formData, job_role: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               >
                 <option value="">Select job role</option>
                 {jobRoles.map((role) => (
@@ -244,7 +244,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.department}
                 onChange={(e) => setFormData({ ...formData, department: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               >
                 <option value="">Select department</option>
                 {departments.map((dept) => (
@@ -263,7 +263,7 @@ export default function ProfileManagement() {
                 onChange={(e) => setFormData({ ...formData, previous_experience: e.target.value })}
                 rows={3}
                 placeholder="Describe your previous work experience..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function ProfileManagement() {
         {/* Emergency Contact */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <Shield size={20} className="text-[#C73532]" />
+            <Shield size={20} className="text-[#be0e0c]" />
             Emergency Contact
           </h3>
           <div className="grid md:grid-cols-3 gap-4">
@@ -285,7 +285,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.emergency_contact_name}
                 onChange={(e) => setFormData({ ...formData, emergency_contact_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -298,7 +298,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.emergency_contact_phone}
                 onChange={(e) => setFormData({ ...formData, emergency_contact_phone: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -312,7 +312,7 @@ export default function ProfileManagement() {
                 value={formData.emergency_contact_relationship}
                 onChange={(e) => setFormData({ ...formData, emergency_contact_relationship: e.target.value })}
                 placeholder="e.g., Spouse, Parent"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function ProfileManagement() {
         {/* Bank Details */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <CreditCard size={20} className="text-[#C73532]" />
+            <CreditCard size={20} className="text-[#be0e0c]" />
             Bank Account Details
           </h3>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
@@ -339,7 +339,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.bank_account_name}
                 onChange={(e) => setFormData({ ...formData, bank_account_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -354,7 +354,7 @@ export default function ProfileManagement() {
                 onChange={(e) => setFormData({ ...formData, bank_account_number: e.target.value })}
                 maxLength={8}
                 placeholder="12345678"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -369,7 +369,7 @@ export default function ProfileManagement() {
                 onChange={(e) => setFormData({ ...formData, bank_sort_code: e.target.value })}
                 maxLength={6}
                 placeholder="12-34-56"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -384,7 +384,7 @@ export default function ProfileManagement() {
                 onChange={(e) => setFormData({ ...formData, ni_number: e.target.value.toUpperCase() })}
                 maxLength={9}
                 placeholder="AB123456C"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
           </div>
@@ -393,7 +393,7 @@ export default function ProfileManagement() {
         {/* Work Availability & Consent */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <Calendar size={20} className="text-[#C73532]" />
+            <Calendar size={20} className="text-[#be0e0c]" />
             Work Availability & Consent
           </h3>
 
@@ -407,7 +407,7 @@ export default function ProfileManagement() {
                 disabled={!editing}
                 value={formData.available_from_date}
                 onChange={(e) => setFormData({ ...formData, available_from_date: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -421,7 +421,7 @@ export default function ProfileManagement() {
                     href={formData.cv_file_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#C73532] hover:underline text-sm"
+                    className="text-[#be0e0c] hover:underline text-sm"
                   >
                     View Current CV
                   </a>
@@ -433,7 +433,7 @@ export default function ProfileManagement() {
                 value={formData.cv_file_url}
                 onChange={(e) => setFormData({ ...formData, cv_file_url: e.target.value })}
                 placeholder="Enter URL to your CV file"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
               <p className="text-xs text-gray-500 mt-1">
                 Upload your CV to a cloud service (Google Drive, Dropbox, etc.) and paste the shareable link here
@@ -447,7 +447,7 @@ export default function ProfileManagement() {
                   disabled={!editing}
                   checked={formData.contact_consent}
                   onChange={(e) => setFormData({ ...formData, contact_consent: e.target.checked })}
-                  className="mt-1 h-5 w-5 text-[#C73532] border-gray-300 rounded focus:ring-[#C73532] disabled:cursor-not-allowed"
+                  className="mt-1 h-5 w-5 text-[#be0e0c] border-gray-300 rounded focus:ring-[#be0e0c] disabled:cursor-not-allowed"
                 />
                 <div>
                   <span className="text-sm font-semibold text-gray-900">
@@ -467,7 +467,7 @@ export default function ProfileManagement() {
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 flex items-center justify-center gap-2 bg-[#C73532] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex-1 flex items-center justify-center gap-2 bg-[#be0e0c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Save size={20} />
               {loading ? 'Saving...' : 'Save Changes'}

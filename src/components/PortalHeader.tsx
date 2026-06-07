@@ -18,7 +18,7 @@ export default function PortalHeader({ title }: PortalHeaderProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <a href="/"
-              className="flex items-center space-x-2 text-gray-600 hover:text-[#C73532] transition-colors"
+              className="flex items-center space-x-2 text-gray-600 hover:text-[#be0e0c] transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
               <span className="font-medium">Back to Website</span>
@@ -29,7 +29,7 @@ export default function PortalHeader({ title }: PortalHeaderProps) {
 
           <button
             onClick={handleSignOut}
-            className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-[#C73532] hover:bg-gray-50 rounded-lg transition-all"
+            className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-[#be0e0c] hover:bg-gray-50 rounded-lg transition-all"
           >
             <LogOut className="w-5 h-5" />
             <span className="font-medium">Sign Out</span>

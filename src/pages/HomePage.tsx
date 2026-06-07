@@ -32,7 +32,7 @@ export default function HomePage() {
               <button
                 type="button"
                 onClick={openQuote}
-                className="bg-[#C73532] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#A92C2A] transition-colors shadow-lg"
+                className="bg-[#be0e0c] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#9f0b0a] transition-colors shadow-lg"
               >
                 Book EPC Appointment
               </button>

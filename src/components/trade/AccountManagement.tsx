@@ -121,7 +121,7 @@ export default function AccountManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C73532]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#be0e0c]"></div>
       </div>
     );
   }
@@ -141,7 +141,7 @@ export default function AccountManagement() {
               type="text"
               value={formData.businessName}
               onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -154,7 +154,7 @@ export default function AccountManagement() {
               type="text"
               value={formData.contactName}
               onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -167,7 +167,7 @@ export default function AccountManagement() {
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -180,7 +180,7 @@ export default function AccountManagement() {
               type="tel"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function AccountManagement() {
             value={formData.businessAddress}
             onChange={(e) => setFormData({ ...formData, businessAddress: e.target.value })}
             rows={3}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
           />
         </div>
 
@@ -208,7 +208,7 @@ export default function AccountManagement() {
               value={formData.companyRegistrationNumber}
               onChange={(e) => setFormData({ ...formData, companyRegistrationNumber: e.target.value })}
               placeholder="e.g., 12345678"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -221,7 +221,7 @@ export default function AccountManagement() {
               value={formData.vatNumber}
               onChange={(e) => setFormData({ ...formData, vatNumber: e.target.value })}
               placeholder="e.g., GB123456789"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function AccountManagement() {
               type="text"
               value={formData.bankAccountName}
               onChange={(e) => setFormData({ ...formData, bankAccountName: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -257,7 +257,7 @@ export default function AccountManagement() {
               onChange={(e) => setFormData({ ...formData, bankAccountNumber: e.target.value })}
               placeholder="12345678"
               maxLength={8}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
 
@@ -271,7 +271,7 @@ export default function AccountManagement() {
               onChange={(e) => setFormData({ ...formData, bankSortCode: e.target.value })}
               placeholder="12-34-56"
               maxLength={8}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C73532] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#be0e0c] focus:border-transparent"
             />
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function AccountManagement() {
             Your Account Manager
           </h3>
           <div className="flex items-center gap-6 mb-4">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#C73532] to-[#A92C2A] flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#be0e0c] to-[#9f0b0a] flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
               {accountManager.full_name.charAt(0)}
             </div>
             <div className="flex-1">
@@ -300,7 +300,7 @@ export default function AccountManagement() {
               href={`mailto:${accountManager.email}`}
               className="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition-shadow"
             >
-              <Mail size={20} className="text-[#C73532]" />
+              <Mail size={20} className="text-[#be0e0c]" />
               <div>
                 <p className="text-xs text-gray-600">Email</p>
                 <p className="font-semibold text-gray-900 text-sm">{accountManager.email}</p>
@@ -329,7 +329,7 @@ export default function AccountManagement() {
         <button
           onClick={handleSave}
           disabled={saving}
-          className="flex items-center gap-2 bg-[#C73532] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#A92C2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex items-center gap-2 bg-[#be0e0c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#9f0b0a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Save size={20} />
           {saving ? 'Saving...' : 'Save Changes'}

@@ -167,7 +167,7 @@ const { user, userRole, loading: authLoading } = useAuth();
           </button>
           <button
             onClick={() => setShowQuoteForm(true)}
-            className="bg-gradient-to-r from-[#C73532] to-[#A92C2A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 group"
+            className="bg-gradient-to-r from-[#be0e0c] to-[#9f0b0a] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 group"
           >
             <Plus size={24} className="group-hover:rotate-90 transition-transform" />
             Get a Quote
